@@ -1,0 +1,966 @@
+**command: ./gpu_perman -k6 -f erdos_int/34_0.40_4.mtx -s -p5 -u4 -o -d1 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.30_4.mtx -s -p17 -u2 -o -g -c -t1 -d1 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.40_4.mtx -s -p5 -u4 -o -d2 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.30_4.mtx -s -p5 -u2 -o -d4 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.50_4.mtx -s -p5 -u4 -o -d2 
+**command: ./gpu_perman -k6 -a -f erdos_int/32_0.40_3.mtx -s -p4 -x2000000 -y1 -g -c -t1 -d1 
+**command: ./gpu_perman -k6 -f erdos_real/30_0.10_4.mtx -p5 -u2 -o -d8 
+**command: ./gpu_perman -k6 -f erdos_int/38_0.30_4.mtx -s -p5 -u4 -o -d4 
+**command: ./gpu_perman -k6 -a -f erdos_int/39_0.30_3.mtx -s -p4 -x4000000 -y5 -g -c -t2 -d2 
+**command: ./gpu_perman -k6 -a -f erdos_int/30_0.60_3.mtx -s -p4 -x4000000 -y1 -g -c -t2 -d2 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.40_4.mtx -s -p5 -u1 -o -d2 
+**command: ./gpu_perman -k6 -a -f erdos_int/30_0.20_3.mtx -s -p4 -x4000000 -y1 -g -c -t32 -d4 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.50_4.mtx -s -p17 -u4 -o -g -c -t8 -d8 
+**command: ./gpu_perman -k6 -a -f erdos_int/37_0.90_3.mtx -s -p4 -x4000000 -y5 -g -c -t1 -d1 
+**command: ./gpu_perman -k6 -f erdos_real/40_0.10_4.mtx -p5 -u4 -o -d2 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.40_4.mtx -s -p5 -u2 -o -d1 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.40_4.mtx -s -p5 -u4 -o -d4 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.50_4.mtx -s -p5 -u1 -o -d4 -r1 
+**command: ./gpu_perman -k6 -a -f erdos_int/40_0.10_3.mtx -s -p4 -x4000000 -y5 -g -c -t32 -d4 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.50_4.mtx -s -p17 -u1 -o -g -c -t1 -d1 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.40_4.mtx -s -p17 -u1 -o -g -c -t1 -d1 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.50_4.mtx -s -p5 -u2 -o -d4 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.40_4.mtx -s -p5 -u2 -o -d8 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.30_4.mtx -s -p17 -u1 -o -g -c -t64 -d8 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.40_4.mtx -s -p17 -u2 -o -g -c -t8 -d8 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/38_0.40_4.mtx -s -p5 -u1 -o -d4 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.30_4.mtx -s -p17 -u4 -o -g -c -t32 -d8 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/38_0.30_4.mtx -s -p5 -u1 -o -d4 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.30_4.mtx -s -p17 -u1 -o -g -c -t1 -d1 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.50_4.mtx -s -p17 -u4 -o -g -c -t64 -d8 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.50_4.mtx -s -p5 -u2 -o -d4 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.40_4.mtx -s -p5 -u1 -o -d4 -r1 
+**command: ./gpu_perman -k6 -a -f erdos_int/39_0.90_3.mtx -s -p4 -x2000000 -y5 -g -c -t32 -d4 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.40_4.mtx -s -p17 -u4 -o -g -c -t1 -d1 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.50_4.mtx -s -p17 -u4 -o -g -c -t2 -d2 
+**command: ./gpu_perman -k6 -a -f erdos_int/31_0.90_3.mtx -s -p4 -x2000000 -y1 -g -c -t32 -d4 
+**command: ./gpu_perman -k6 -a -f erdos_int/32_0.90_3.mtx -s -p4 -x4000000 -y5 -g -c -t2 -d2 
+**command: ./gpu_perman -k6 -f erdos_real/40_0.10_4.mtx -p7 -u1 -o -g -c -t8 -d8 
+**command: ./gpu_perman -k6 -f erdos_int/38_0.40_4.mtx -s -p5 -u2 -o -d1 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.50_4.mtx -s -p17 -u4 -o -g -c -t8 -d8 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.40_4.mtx -s -p17 -u2 -o -g -c -t64 -d8 
+**command: ./gpu_perman -k6 -a -f erdos_int/30_0.60_3.mtx -s -p4 -x1000000 -y1 -g -c -t32 -d4 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.50_4.mtx -s -p5 -u1 -o -d8 -r1 
+**command: ./gpu_perman -k6 -a -f erdos_int/33_0.50_3.mtx -s -p4 -x2000000 -y1 -g -c -t4 -d4 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.30_4.mtx -s -p5 -u4 -o -d8 
+**command: ./gpu_perman -k6 -f erdos_real/30_0.10_4.mtx -p5 -o -d2 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.30_4.mtx -s -p5 -u2 -o -d8 -r1 
+**command: ./gpu_perman -k6 -a -f erdos_int/39_0.20_3.mtx -s -p4 -x2000000 -y1 -g -c -t2 -d2 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.50_4.mtx -s -p17 -u2 -o -g -c -t32 -d8 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.50_4.mtx -s -p17 -u2 -o -g -c -t2 -d2 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.30_4.mtx -s -p17 -u1 -o -g -c -t64 -d8 
+**command: ./gpu_perman -k6 -f erdos_int/38_0.40_4.mtx -s -p5 -u1 -o -d1 
+**command: ./gpu_perman -k6 -f erdos_int/38_0.30_4.mtx -s -p17 -u2 -o -g -c -t2 -d2 -r2 
+**command: ./gpu_perman -k6 -a -f erdos_int/33_0.80_3.mtx -s -p4 -x1000000 -y1 -g -c -t4 -d4 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.50_4.mtx -s -p5 -u4 -o -d4 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.40_4.mtx -s -p17 -u1 -o -g -c -t1 -d1 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.30_4.mtx -s -p17 -u4 -o -g -c -t8 -d8 
+**command: ./gpu_perman -k6 -f erdos_real/30_0.10_4.mtx -p7 -o -g -c -t2 -d2 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.50_4.mtx -s -p17 -u2 -o -g -c -t8 -d8 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.40_4.mtx -s -p17 -u1 -o -g -c -t2 -d2 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.50_4.mtx -s -p5 -u4 -o -d1 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.40_4.mtx -s -p17 -u4 -o -g -c -t2 -d2 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.40_4.mtx -s -p17 -u4 -o -g -c -t1 -d1 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.30_4.mtx -s -p5 -u4 -o -d8 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.50_4.mtx -s -p5 -u1 -o -d1 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.40_4.mtx -s -p17 -u2 -o -g -c -t64 -d8 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.40_4.mtx -s -p5 -u2 -o -d8 
+**command: ./gpu_perman -k6 -a -f erdos_int/40_0.10_3.mtx -s -p4 -x4000000 -y1 -g -c -t32 -d4 
+**command: ./gpu_perman -k6 -f erdos_real/40_0.10_4.mtx -p7 -u4 -o -g -c -t2 -d2 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.30_4.mtx -s -p17 -u2 -o -g -c -t4 -d4 
+**command: ./gpu_perman -k6 -a -f erdos_int/32_0.90_3.mtx -s -p4 -x1000000 -y1 -g -c -t4 -d4 
+**command: ./gpu_perman -k6 -f erdos_int/38_0.40_4.mtx -s -p5 -u1 -o -d2 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.50_4.mtx -s -p17 -u1 -o -g -c -t4 -d4 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/38_0.30_4.mtx -s -p17 -u1 -o -g -c -t2 -d2 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.50_4.mtx -s -p5 -u2 -o -d1 -r1 
+**command: ./gpu_perman -k6 -f erdos_real/30_0.10_4.mtx -p7 -o -g -c -t8 -d8 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.40_4.mtx -s -p17 -u4 -o -g -c -t32 -d8 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.30_4.mtx -s -p17 -u2 -o -g -c -t64 -d8 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.50_4.mtx -s -p5 -u2 -o -d2 
+**command: ./gpu_perman -k6 -f erdos_real/30_0.10_4.mtx -p5 -u4 -o -d8 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.40_4.mtx -s -p5 -u1 -o -d2 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.50_4.mtx -s -p5 -u1 -o -d2 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.50_4.mtx -s -p5 -u1 -o -d1 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.50_4.mtx -s -p5 -u4 -o -d1 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.50_4.mtx -s -p5 -u2 -o -d2 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.50_4.mtx -s -p17 -u1 -o -g -c -t2 -d2 -r2 
+**command: ./gpu_perman -k6 -a -f erdos_int/39_0.30_3.mtx -s -p4 -x1000000 -y1 -g -c -t32 -d4 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.40_4.mtx -s -p5 -u4 -o -d8 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.40_4.mtx -s -p17 -u1 -o -g -c -t2 -d2 -r2 
+**command: ./gpu_perman -k6 -f erdos_real/30_0.10_4.mtx -p5 -o -d8 
+**command: ./gpu_perman -k6 -f erdos_real/40_0.10_4.mtx -p7 -u4 -o -g -c -t8 -d8 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.40_4.mtx -s -p5 -u1 -o -d1 
+**command: ./gpu_perman -k6 -f erdos_int/38_0.30_4.mtx -s -p17 -u2 -o -g -c -t2 -d2 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.50_4.mtx -s -p5 -u2 -o -d4 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.40_4.mtx -s -p5 -u2 -o -d1 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.50_4.mtx -s -p17 -u2 -o -g -c -t2 -d2 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.50_4.mtx -s -p5 -u4 -o -d8 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.50_4.mtx -s -p17 -u1 -o -g -c -t4 -d4 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.40_4.mtx -s -p5 -u4 -o -d1 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.30_4.mtx -s -p5 -u1 -o -d8 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.50_4.mtx -s -p5 -u2 -o -d4 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.50_4.mtx -s -p17 -u1 -o -g -c -t1 -d1 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.40_4.mtx -s -p17 -u4 -o -g -c -t32 -d8 -r2 
+**command: ./gpu_perman -k6 -f erdos_real/30_0.10_4.mtx -p7 -u1 -o -g -c -t2 -d2 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.50_4.mtx -s -p5 -u1 -o -d2 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.30_4.mtx -s -p5 -u4 -o -d8 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.30_4.mtx -s -p5 -u2 -o -d1 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.30_4.mtx -s -p5 -u1 -o -d8 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.30_4.mtx -s -p5 -u4 -o -d8 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.50_4.mtx -s -p17 -u1 -o -g -c -t64 -d8 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.40_4.mtx -s -p5 -u2 -o -d4 -r1 
+**command: ./gpu_perman -k6 -a -f erdos_int/31_0.90_3.mtx -s -p4 -x4000000 -y5 -g -c -t1 -d1 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.30_4.mtx -s -p5 -u1 -o -d4 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.30_4.mtx -s -p5 -u2 -o -d2 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.40_4.mtx -s -p17 -u1 -o -g -c -t1 -d1 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.30_4.mtx -s -p5 -u2 -o -d1 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.50_4.mtx -s -p5 -u4 -o -d4 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.50_4.mtx -s -p5 -u4 -o -d1 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.50_4.mtx -s -p17 -u1 -o -g -c -t64 -d8 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.30_4.mtx -s -p17 -u4 -o -g -c -t32 -d8 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.50_4.mtx -s -p5 -u2 -o -d8 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.40_4.mtx -s -p5 -u1 -o -d8 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.50_4.mtx -s -p5 -u2 -o -d2 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.30_4.mtx -s -p17 -u1 -o -g -c -t8 -d8 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.50_4.mtx -s -p5 -u2 -o -d8 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.30_4.mtx -s -p5 -u1 -o -d4 -r1 
+**command: ./gpu_perman -k6 -f erdos_real/40_0.10_4.mtx -p7 -o -g -c -t4 -d4 
+**command: ./gpu_perman -k6 -f erdos_int/38_0.30_4.mtx -s -p5 -u4 -o -d8 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/38_0.30_4.mtx -s -p17 -u2 -o -g -c -t4 -d4 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/38_0.40_4.mtx -s -p5 -u2 -o -d1 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.30_4.mtx -s -p5 -u2 -o -d8 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.50_4.mtx -s -p17 -u2 -o -g -c -t32 -d8 -r2 
+**command: ./gpu_perman -k6 -f erdos_real/40_0.10_4.mtx -p7 -u1 -o -g -c -t32 -d8 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.30_4.mtx -s -p17 -u2 -o -g -c -t4 -d4 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.50_4.mtx -s -p5 -u1 -o -d4 -r1 
+**command: ./gpu_perman -k6 -f erdos_real/30_0.10_4.mtx -p7 -o -g -c -t32 -d8 
+**command: ./gpu_perman -k6 -f erdos_int/38_0.30_4.mtx -s -p17 -u4 -o -g -c -t2 -d2 
+**command: ./gpu_perman -k6 -f erdos_real/30_0.10_4.mtx -p7 -u4 -o -g -c -t4 -d4 
+**command: ./gpu_perman -k6 -f erdos_real/30_0.10_4.mtx -p7 -u2 -o -g -c -t32 -d8 
+**command: ./gpu_perman -k6 -f erdos_real/40_0.10_4.mtx -p7 -o -g -c -t2 -d2 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.50_4.mtx -s -p5 -u1 -o -d2 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.50_4.mtx -s -p17 -u1 -o -g -c -t32 -d8 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.30_4.mtx -s -p5 -u4 -o -d4 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.40_4.mtx -s -p5 -u4 -o -d8 
+**command: ./gpu_perman -k6 -f erdos_real/30_0.10_4.mtx -p5 -o -d4 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.30_4.mtx -s -p5 -u1 -o -d4 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.50_4.mtx -s -p5 -u4 -o -d1 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.40_4.mtx -s -p5 -u1 -o -d8 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.30_4.mtx -s -p5 -u4 -o -d4 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.50_4.mtx -s -p17 -u1 -o -g -c -t4 -d4 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.50_4.mtx -s -p5 -u2 -o -d1 
+**command: ./gpu_perman -k6 -f erdos_real/30_0.10_4.mtx -p7 -u4 -o -g -c -t8 -d8 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.50_4.mtx -s -p5 -u4 -o -d4 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.30_4.mtx -s -p5 -u1 -o -d2 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.40_4.mtx -s -p5 -u1 -o -d4 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.30_4.mtx -s -p5 -u4 -o -d1 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.40_4.mtx -s -p17 -u2 -o -g -c -t4 -d4 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.50_4.mtx -s -p5 -u2 -o -d1 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.50_4.mtx -s -p17 -u2 -o -g -c -t1 -d1 
+**command: ./gpu_perman -k6 -f erdos_real/30_0.10_4.mtx -p5 -u2 -o -d1 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.50_4.mtx -s -p5 -u1 -o -d8 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.50_4.mtx -s -p17 -u1 -o -g -c -t8 -d8 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.30_4.mtx -s -p5 -u2 -o -d4 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/38_0.30_4.mtx -s -p17 -u1 -o -g -c -t1 -d1 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.50_4.mtx -s -p17 -u2 -o -g -c -t32 -d8 
+**command: ./gpu_perman -k6 -f erdos_real/30_0.10_4.mtx -p7 -u2 -o -g -c -t8 -d8 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.40_4.mtx -s -p5 -u4 -o -d1 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.30_4.mtx -s -p5 -u4 -o -d4 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.50_4.mtx -s -p5 -u1 -o -d8 
+**command: ./gpu_perman -k6 -a -f erdos_int/40_0.10_3.mtx -s -p4 -x2000000 -y1 -g -c -t4 -d4 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.30_4.mtx -s -p17 -u1 -o -g -c -t32 -d8 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.30_4.mtx -s -p5 -u1 -o -d8 
+**command: ./gpu_perman -k6 -a -f erdos_int/30_0.20_3.mtx -s -p4 -x4000000 -y5 -g -c -t1 -d1 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.30_4.mtx -s -p5 -u2 -o -d2 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.30_4.mtx -s -p5 -u4 -o -d2 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/38_0.30_4.mtx -s -p5 -u1 -o -d8 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.40_4.mtx -s -p17 -u2 -o -g -c -t4 -d4 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.40_4.mtx -s -p5 -u2 -o -d1 
+**command: ./gpu_perman -k6 -f erdos_real/30_0.10_4.mtx -p7 -o -g -c -t1 -d1 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.50_4.mtx -s -p17 -u4 -o -g -c -t64 -d8 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.50_4.mtx -s -p5 -u1 -o -d4 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.30_4.mtx -s -p17 -u2 -o -g -c -t2 -d2 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/38_0.30_4.mtx -s -p5 -u2 -o -d1 
+**command: ./gpu_perman -k6 -f erdos_real/40_0.10_4.mtx -p7 -o -g -c -t64 -d8 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.50_4.mtx -s -p5 -u2 -o -d2 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.40_4.mtx -s -p17 -u4 -o -g -c -t4 -d4 
+**command: ./gpu_perman -k6 -a -f erdos_int/39_0.30_3.mtx -s -p4 -y5 -g -c -t32 -d4 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.30_4.mtx -s -p5 -u2 -o -d2 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.50_4.mtx -s -p17 -u2 -o -g -c -t2 -d2 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.40_4.mtx -s -p17 -u4 -o -g -c -t1 -d1 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.40_4.mtx -s -p5 -u1 -o -d8 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.50_4.mtx -s -p5 -u4 -o -d1 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/38_0.40_4.mtx -s -p5 -u1 -o -d8 -r1 
+**command: ./gpu_perman -k6 -f erdos_real/30_0.10_4.mtx -p5 -u1 -o -d2 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.30_4.mtx -s -p5 -u4 -o -d4 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.40_4.mtx -s -p5 -u2 -o -d2 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.40_4.mtx -s -p5 -u4 -o -d1 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.50_4.mtx -s -p5 -u4 -o -d2 -r1 
+**command: ./gpu_perman -k6 -f erdos_real/40_0.10_4.mtx -p5 -u1 -o -d8 
+**command: ./gpu_perman -k6 -f erdos_int/38_0.40_4.mtx -s -p5 -u1 -o -d8 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.30_4.mtx -s -p5 -u1 -o -d2 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.50_4.mtx -s -p5 -u2 -o -d4 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.50_4.mtx -s -p17 -u2 -o -g -c -t32 -d8 
+**command: ./gpu_perman -k6 -f erdos_int/38_0.30_4.mtx -s -p17 -u4 -o -g -c -t8 -d8 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.30_4.mtx -s -p17 -u4 -o -g -c -t8 -d8 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.50_4.mtx -s -p5 -u1 -o -d2 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.40_4.mtx -s -p5 -u1 -o -d1 
+**command: ./gpu_perman -k6 -f erdos_int/38_0.30_4.mtx -s -p5 -u2 -o -d8 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.50_4.mtx -s -p5 -u1 -o -d8 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.50_4.mtx -s -p17 -u1 -o -g -c -t8 -d8 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.40_4.mtx -s -p5 -u2 -o -d1 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.40_4.mtx -s -p17 -u2 -o -g -c -t32 -d8 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.50_4.mtx -s -p5 -u1 -o -d1 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.50_4.mtx -s -p5 -u4 -o -d4 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.30_4.mtx -s -p17 -u2 -o -g -c -t32 -d8 
+**command: ./gpu_perman -k6 -f erdos_real/30_0.10_4.mtx -p7 -u2 -o -g -c -t4 -d4 
+**command: ./gpu_perman -k6 -a -f erdos_int/33_0.50_3.mtx -s -p4 -x2000000 -y1 -g -c -t32 -d4 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.50_4.mtx -s -p5 -u1 -o -d8 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.50_4.mtx -s -p17 -u2 -o -g -c -t64 -d8 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.40_4.mtx -s -p17 -u1 -o -g -c -t4 -d4 
+**command: ./gpu_perman -k6 -a -f erdos_int/39_0.90_3.mtx -s -p4 -x4000000 -y1 -g -c -t2 -d2 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.30_4.mtx -s -p5 -u2 -o -d2 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.40_4.mtx -s -p5 -u1 -o -d8 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.40_4.mtx -s -p5 -u2 -o -d2 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.40_4.mtx -s -p5 -u4 -o -d1 -r1 
+**command: ./gpu_perman -k6 -a -f erdos_int/32_0.40_3.mtx -s -p4 -x1000000 -y5 -g -c -t32 -d4 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.40_4.mtx -s -p17 -u2 -o -g -c -t1 -d1 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.50_4.mtx -s -p17 -u1 -o -g -c -t1 -d1 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.40_4.mtx -s -p17 -u4 -o -g -c -t32 -d8 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.40_4.mtx -s -p5 -u1 -o -d1 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.50_4.mtx -s -p5 -u2 -o -d8 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.50_4.mtx -s -p5 -u1 -o -d2 
+**command: ./gpu_perman -k6 -f erdos_int/38_0.30_4.mtx -s -p5 -u4 -o -d4 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.50_4.mtx -s -p17 -u2 -o -g -c -t4 -d4 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.30_4.mtx -s -p17 -u1 -o -g -c -t1 -d1 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.50_4.mtx -s -p17 -u2 -o -g -c -t4 -d4 
+**command: ./gpu_perman -k6 -f erdos_int/38_0.30_4.mtx -s -p5 -u2 -o -d4 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.40_4.mtx -s -p5 -u4 -o -d2 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.30_4.mtx -s -p5 -u4 -o -d2 
+**command: ./gpu_perman -k6 -a -f erdos_int/32_0.90_3.mtx -s -p4 -x4000000 -y1 -g -c -t2 -d2 
+**command: ./gpu_perman -k6 -f erdos_real/40_0.10_4.mtx -p5 -u4 -o -d1 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.30_4.mtx -s -p17 -u4 -o -g -c -t1 -d1 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.50_4.mtx -s -p17 -u1 -o -g -c -t32 -d8 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.40_4.mtx -s -p5 -u2 -o -d2 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.50_4.mtx -s -p17 -u1 -o -g -c -t4 -d4 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.50_4.mtx -s -p5 -u4 -o -d4 
+**command: ./gpu_perman -k6 -f erdos_int/38_0.30_4.mtx -s -p5 -u1 -o -d1 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.40_4.mtx -s -p5 -u1 -o -d4 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.30_4.mtx -s -p17 -u4 -o -g -c -t1 -d1 
+**command: ./gpu_perman -k6 -f erdos_real/30_0.10_4.mtx -p5 -u1 -o -d4 
+**command: ./gpu_perman -k6 -f erdos_real/30_0.10_4.mtx -p7 -u2 -o -g -c -t1 -d1 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.50_4.mtx -s -p5 -u2 -o -d8 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.50_4.mtx -s -p17 -u4 -o -g -c -t32 -d8 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.30_4.mtx -s -p5 -u2 -o -d8 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.40_4.mtx -s -p17 -u1 -o -g -c -t64 -d8 
+**command: ./gpu_perman -k6 -a -f erdos_int/32_0.90_3.mtx -s -p4 -x2000000 -y5 -g -c -t32 -d4 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.40_4.mtx -s -p5 -u1 -o -d2 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.40_4.mtx -s -p17 -u4 -o -g -c -t4 -d4 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.50_4.mtx -s -p17 -u1 -o -g -c -t1 -d1 -r2 
+**command: ./gpu_perman -k6 -f erdos_real/30_0.10_4.mtx -p5 -u4 -o -d1 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.40_4.mtx -s -p17 -u2 -o -g -c -t8 -d8 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.40_4.mtx -s -p17 -u1 -o -g -c -t8 -d8 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.50_4.mtx -s -p17 -u4 -o -g -c -t4 -d4 -r2 
+**command: ./gpu_perman -k6 -a -f erdos_int/32_0.40_3.mtx -s -p4 -x4000000 -y1 -g -c -t1 -d1 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.40_4.mtx -s -p17 -u1 -o -g -c -t1 -d1 
+**command: ./gpu_perman -k6 -a -f erdos_int/37_0.90_3.mtx -s -p4 -x4000000 -y1 -g -c -t4 -d4 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.50_4.mtx -s -p5 -u4 -o -d8 
+**command: ./gpu_perman -k6 -a -f erdos_int/40_0.10_3.mtx -s -p4 -x1000000 -y1 -g -c -t2 -d2 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.50_4.mtx -s -p17 -u1 -o -g -c -t4 -d4 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.40_4.mtx -s -p5 -u1 -o -d1 -r1 
+**command: ./gpu_perman -k6 -f erdos_real/40_0.10_4.mtx -p7 -o -g -c -t32 -d8 
+**command: ./gpu_perman -k6 -f erdos_real/30_0.10_4.mtx -p7 -o -g -c -t4 -d4 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.40_4.mtx -s -p5 -u2 -o -d1 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.50_4.mtx -s -p5 -u4 -o -d8 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.50_4.mtx -s -p17 -u2 -o -g -c -t1 -d1 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/38_0.30_4.mtx -s -p5 -u2 -o -d8 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.40_4.mtx -s -p5 -u1 -o -d4 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.40_4.mtx -s -p17 -u2 -o -g -c -t32 -d8 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.30_4.mtx -s -p5 -u1 -o -d2 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.50_4.mtx -s -p5 -u4 -o -d8 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.50_4.mtx -s -p5 -u4 -o -d1 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.50_4.mtx -s -p5 -u2 -o -d8 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.40_4.mtx -s -p17 -u2 -o -g -c -t32 -d8 
+**command: ./gpu_perman -k6 -f erdos_int/38_0.30_4.mtx -s -p17 -u1 -o -g -c -t32 -d8 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.50_4.mtx -s -p17 -u2 -o -g -c -t32 -d8 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.40_4.mtx -s -p5 -u2 -o -d1 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.30_4.mtx -s -p5 -u4 -o -d8 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.50_4.mtx -s -p17 -u1 -o -g -c -t32 -d8 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.10_4.mtx -s -p17 -o -g -c -t4 -d4 -r2 
+**command: ./gpu_perman -k6 -f erdos_real/30_0.10_4.mtx -p7 -u2 -o -g -c -t2 -d2 
+**command: ./gpu_perman -k6 -f erdos_int/38_0.30_4.mtx -s -p17 -u2 -o -g -c -t32 -d8 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.40_4.mtx -s -p17 -u1 -o -g -c -t1 -d1 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.30_4.mtx -s -p17 -u1 -o -g -c -t64 -d8 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.40_4.mtx -s -p17 -u4 -o -g -c -t4 -d4 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.40_4.mtx -s -p17 -u2 -o -g -c -t32 -d8 
+**command: ./gpu_perman -k6 -a -f erdos_int/30_0.60_3.mtx -s -p4 -x4000000 -y5 -g -c -t32 -d4 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.40_4.mtx -s -p5 -u1 -o -d4 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.50_4.mtx -s -p5 -u4 -o -d2 -r1 
+**command: ./gpu_perman -k6 -f erdos_real/30_0.10_4.mtx -p5 -o -d1 
+**command: ./gpu_perman -k6 -f erdos_real/30_0.10_4.mtx -p7 -u1 -o -g -c -t4 -d4 
+**command: ./gpu_perman -k6 -f erdos_real/30_0.10_4.mtx -p7 -u1 -o -g -c -t1 -d1 
+**command: ./gpu_perman -k6 -f erdos_real/40_0.10_4.mtx -p7 -u2 -o -g -c -t32 -d8 
+**command: ./gpu_perman -k6 -a -f erdos_int/39_0.20_3.mtx -s -p4 -x1000000 -y1 -g -c -t2 -d2 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.50_4.mtx -s -p17 -u2 -o -g -c -t8 -d8 
+**command: ./gpu_perman -k6 -a -f erdos_int/39_0.20_3.mtx -s -p4 -x2000000 -y1 -g -c -t32 -d4 
+**command: ./gpu_perman -k6 -a -f erdos_int/33_0.50_3.mtx -s -p4 -x4000000 -y5 -g -c -t32 -d4 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.50_4.mtx -s -p5 -u1 -o -d4 
+**command: ./gpu_perman -k6 -f erdos_int/38_0.30_4.mtx -s -p5 -u4 -o -d2 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.50_4.mtx -s -p5 -u4 -o -d8 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.40_4.mtx -s -p17 -u4 -o -g -c -t8 -d8 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.50_4.mtx -s -p5 -u4 -o -d4 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/38_0.30_4.mtx -s -p17 -u1 -o -g -c -t4 -d4 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.40_4.mtx -s -p5 -u1 -o -d8 
+**command: ./gpu_perman -k6 -a -f erdos_int/32_0.40_3.mtx -s -p4 -x4000000 -y5 -g -c -t1 -d1 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.40_4.mtx -s -p5 -u2 -o -d8 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.50_4.mtx -s -p17 -u1 -o -g -c -t64 -d8 
+**command: ./gpu_perman -k6 -f erdos_real/30_0.10_4.mtx -p5 -u2 -o -d4 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.50_4.mtx -s -p17 -u1 -o -g -c -t4 -d4 
+**command: ./gpu_perman -k6 -f erdos_real/30_0.10_4.mtx -p7 -u2 -o -g -c -t64 -d8 
+**command: ./gpu_perman -k6 -a -f erdos_int/40_0.10_3.mtx -s -p4 -x4000000 -y1 -g -c -t4 -d4 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.30_4.mtx -s -p5 -u2 -o -d4 
+**command: ./gpu_perman -k6 -f erdos_int/38_0.30_4.mtx -s -p17 -u1 -o -g -c -t64 -d8 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.40_4.mtx -s -p5 -u1 -o -d8 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.50_4.mtx -s -p5 -u1 -o -d4 -r1 
+**command: ./gpu_perman -k6 -a -f erdos_int/33_0.80_3.mtx -s -p4 -x4000000 -y5 -g -c -t4 -d4 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.50_4.mtx -s -p5 -u2 -o -d1 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.40_4.mtx -s -p5 -u1 -o -d1 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.30_4.mtx -s -p5 -u2 -o -d1 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.40_4.mtx -s -p5 -u1 -o -d8 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.50_4.mtx -s -p5 -u1 -o -d8 -r1 
+**command: ./gpu_perman -k6 -f erdos_real/30_0.10_4.mtx -p7 -o -g -c -t64 -d8 
+**command: ./gpu_perman -k6 -f erdos_int/38_0.30_4.mtx -s -p17 -u4 -o -g -c -t4 -d4 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.40_4.mtx -s -p5 -u1 -o -d2 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.50_4.mtx -s -p17 -u2 -o -g -c -t64 -d8 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.30_4.mtx -s -p5 -u4 -o -d4 
+**command: ./gpu_perman -k6 -a -f erdos_int/30_0.20_3.mtx -s -p4 -x1000000 -y1 -g -c -t32 -d4 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.30_4.mtx -s -p5 -u1 -o -d8 -r1 
+**command: ./gpu_perman -k6 -a -f erdos_int/32_0.90_3.mtx -s -p4 -x4000000 -y1 -g -c -t4 -d4 
+**command: ./gpu_perman -k6 -f erdos_real/40_0.10_4.mtx -p5 -u4 -o -d8 
+**command: ./gpu_perman -k6 -f erdos_real/40_0.10_4.mtx -p7 -u2 -o -g -c -t64 -d8 
+**command: ./gpu_perman -k6 -a -f erdos_int/37_0.50_3.mtx -s -p4 -x4000000 -y5 -g -c -t4 -d4 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.30_4.mtx -s -p5 -u1 -o -d4 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.30_4.mtx -s -p5 -u1 -o -d8 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.30_4.mtx -s -p5 -u4 -o -d2 
+**command: ./gpu_perman -k6 -f erdos_int/38_0.30_4.mtx -s -p5 -u1 -o -d1 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.30_4.mtx -s -p5 -u2 -o -d2 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.40_4.mtx -s -p5 -u1 -o -d1 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.50_4.mtx -s -p17 -u4 -o -g -c -t2 -d2 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.40_4.mtx -s -p5 -u4 -o -d4 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.40_4.mtx -s -p5 -u1 -o -d2 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.50_4.mtx -s -p5 -u4 -o -d2 
+**command: ./gpu_perman -k6 -a -f erdos_int/33_0.50_3.mtx -s -p4 -x1000000 -y5 -g -c -t4 -d4 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.40_4.mtx -s -p17 -u4 -o -g -c -t64 -d8 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.30_4.mtx -s -p17 -u4 -o -g -c -t64 -d8 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.50_4.mtx -s -p17 -u4 -o -g -c -t4 -d4 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.50_4.mtx -s -p17 -u2 -o -g -c -t64 -d8 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.30_4.mtx -s -p5 -u1 -o -d1 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.50_4.mtx -s -p17 -u2 -o -g -c -t8 -d8 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.40_4.mtx -s -p5 -u4 -o -d8 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.50_4.mtx -s -p5 -u4 -o -d2 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.50_4.mtx -s -p17 -u2 -o -g -c -t1 -d1 -r2 
+**command: ./gpu_perman -k6 -f erdos_real/40_0.10_4.mtx -p5 -u2 -o -d2 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.30_4.mtx -s -p17 -u4 -o -g -c -t8 -d8 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.40_4.mtx -s -p17 -u1 -o -g -c -t4 -d4 
+**command: ./gpu_perman -k6 -a -f erdos_real/31_0.40_3.mtx -s -p4 -x1000000 -y1 -g -c -t1 -d1 
+**command: ./gpu_perman -k6 -f erdos_real/40_0.10_4.mtx -p7 -u2 -o -g -c -t8 -d8 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.40_4.mtx -s -p5 -u4 -o -d2 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.50_4.mtx -s -p17 -u1 -o -g -c -t4 -d4 
+**command: ./gpu_perman -k6 -a -f erdos_int/30_0.60_3.mtx -s -p4 -x2000000 -y5 -g -c -t4 -d4 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.30_4.mtx -s -p5 -u1 -o -d4 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.50_4.mtx -s -p5 -u2 -o -d2 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.30_4.mtx -s -p5 -u4 -o -d4 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.30_4.mtx -s -p5 -u4 -o -d2 
+**command: ./gpu_perman -k6 -a -f erdos_int/31_0.30_3.mtx -s -p4 -x4000000 -y5 -g -c -t2 -d2 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.50_4.mtx -s -p17 -u1 -o -g -c -t64 -d8 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.40_4.mtx -s -p17 -u4 -o -g -c -t4 -d4 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.40_4.mtx -s -p17 -u4 -o -g -c -t2 -d2 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.50_4.mtx -s -p17 -u4 -o -g -c -t4 -d4 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.30_4.mtx -s -p17 -u1 -o -g -c -t8 -d8 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.40_4.mtx -s -p5 -u4 -o -d4 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.40_4.mtx -s -p5 -u4 -o -d4 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.50_4.mtx -s -p17 -u1 -o -g -c -t8 -d8 
+**command: ./gpu_perman -k6 -a -f erdos_int/30_0.60_3.mtx -s -p4 -x4000000 -y1 -g -c -t1 -d1 
+**command: ./gpu_perman -k6 -a -f erdos_int/37_0.90_3.mtx -s -p4 -x1000000 -y5 -g -c -t2 -d2 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.40_4.mtx -s -p5 -u4 -o -d4 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.40_4.mtx -s -p17 -u4 -o -g -c -t1 -d1 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/38_0.30_4.mtx -s -p5 -u4 -o -d2 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.40_4.mtx -s -p17 -u4 -o -g -c -t4 -d4 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.40_4.mtx -s -p17 -u4 -o -g -c -t2 -d2 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.50_4.mtx -s -p17 -u1 -o -g -c -t32 -d8 -r2 
+**command: ./gpu_perman -k6 -f erdos_real/30_0.10_4.mtx -p7 -u4 -o -g -c -t1 -d1 
+**command: ./gpu_perman -k6 -f erdos_real/40_0.10_4.mtx -p5 -u2 -o -d4 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.50_4.mtx -s -p17 -u2 -o -g -c -t8 -d8 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.50_4.mtx -s -p5 -u1 -o -d8 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.30_4.mtx -s -p17 -u4 -o -g -c -t8 -d8 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.30_4.mtx -s -p5 -u1 -o -d8 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.30_4.mtx -s -p17 -u4 -o -g -c -t2 -d2 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.40_4.mtx -s -p17 -u1 -o -g -c -t64 -d8 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.50_4.mtx -s -p5 -u2 -o -d8 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.50_4.mtx -s -p5 -u2 -o -d1 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.50_4.mtx -s -p5 -u1 -o -d1 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.30_4.mtx -s -p17 -u4 -o -g -c -t4 -d4 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.50_4.mtx -s -p17 -u2 -o -g -c -t4 -d4 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.50_4.mtx -s -p17 -u2 -o -g -c -t64 -d8 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.40_4.mtx -s -p5 -u2 -o -d4 -r1 
+**command: ./gpu_perman -k6 -f erdos_real/30_0.10_4.mtx -p7 -u1 -o -g -c -t64 -d8 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.50_4.mtx -s -p5 -u1 -o -d2 
+**command: ./gpu_perman -k6 -f erdos_real/40_0.10_4.mtx -p7 -u2 -o -g -c -t1 -d1 
+**command: ./gpu_perman -k6 -f erdos_int/38_0.30_4.mtx -s -p17 -u2 -o -g -c -t1 -d1 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.30_4.mtx -s -p17 -u1 -o -g -c -t64 -d8 -r2 
+**command: ./gpu_perman -k6 -f erdos_real/40_0.10_4.mtx -p7 -o -g -c -t8 -d8 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.30_4.mtx -s -p5 -u2 -o -d4 
+**command: ./gpu_perman -k6 -f erdos_int/38_0.30_4.mtx -s -p17 -u4 -o -g -c -t2 -d2 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.40_4.mtx -s -p5 -u4 -o -d2 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.40_4.mtx -s -p5 -u2 -o -d8 -r1 
+**command: ./gpu_perman -k6 -f erdos_real/40_0.10_4.mtx -p7 -o -g -c -t1 -d1 
+**command: ./gpu_perman -k6 -f erdos_int/38_0.30_4.mtx -s -p5 -u2 -o -d2 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.40_4.mtx -s -p5 -u1 -o -d4 
+**command: ./gpu_perman -k6 -a -f erdos_real/31_0.40_3.mtx -s -p4 -y1 -g -c -t2 -d2 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.40_4.mtx -s -p17 -u1 -o -g -c -t4 -d4 -r2 
+**command: ./gpu_perman -k6 -a -f erdos_int/39_0.20_3.mtx -s -p4 -x4000000 -y5 -g -c -t32 -d4 
+**command: ./gpu_perman -k6 -f erdos_int/38_0.30_4.mtx -s -p5 -u2 -o -d1 -r1 
+**command: ./gpu_perman -k6 -a -f erdos_int/37_0.50_3.mtx -s -p4 -x4000000 -y1 -g -c -t2 -d2 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.50_4.mtx -s -p5 -u1 -o -d1 
+**command: ./gpu_perman -k6 -a -f erdos_int/33_0.80_3.mtx -s -p4 -y5 -g -c -t32 -d4 
+**command: ./gpu_perman -k6 -f erdos_real/40_0.10_4.mtx -p5 -o -d2 
+**command: ./gpu_perman -k6 -a -f erdos_int/39_0.30_3.mtx -s -p4 -x4000000 -y5 -g -c -t4 -d4 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.50_4.mtx -s -p17 -u4 -o -g -c -t8 -d8 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.50_4.mtx -s -p5 -u1 -o -d4 -r1 
+**command: ./gpu_perman -k6 -a -f erdos_int/33_0.50_3.mtx -s -p4 -x1000000 -y1 -g -c -t2 -d2 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.40_4.mtx -s -p17 -u2 -o -g -c -t2 -d2 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.30_4.mtx -s -p5 -u4 -o -d2 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.30_4.mtx -s -p17 -u4 -o -g -c -t64 -d8 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.40_4.mtx -s -p17 -u2 -o -g -c -t8 -d8 -r2 
+**command: ./gpu_perman -k6 -a -f erdos_int/31_0.90_3.mtx -s -p4 -y5 -g -c -t32 -d4 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.40_4.mtx -s -p5 -u2 -o -d4 
+**command: ./gpu_perman -k6 -a -f erdos_int/33_0.50_3.mtx -s -p4 -x2000000 -y5 -g -c -t1 -d1 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.50_4.mtx -s -p5 -u2 -o -d1 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.50_4.mtx -s -p5 -u2 -o -d8 
+**command: ./gpu_perman -k6 -f erdos_real/40_0.10_4.mtx -p7 -u1 -o -g -c -t1 -d1 
+**command: ./gpu_perman -k6 -f erdos_real/40_0.10_4.mtx -p7 -u1 -o -g -c -t2 -d2 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.40_4.mtx -s -p5 -u4 -o -d4 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.50_4.mtx -s -p5 -u1 -o -d8 
+**command: ./gpu_perman -k6 -f erdos_real/40_0.10_4.mtx -p5 -u1 -o -d1 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.50_4.mtx -s -p5 -u1 -o -d1 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.40_4.mtx -s -p17 -u1 -o -g -c -t2 -d2 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.40_4.mtx -s -p5 -u4 -o -d2 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.30_4.mtx -s -p5 -u2 -o -d4 
+**command: ./gpu_perman -k6 -f erdos_real/30_0.10_4.mtx -p7 -u1 -o -g -c -t8 -d8 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.40_4.mtx -s -p17 -u2 -o -g -c -t4 -d4 -r2 
+**command: ./gpu_perman -k6 -a -f erdos_int/32_0.90_3.mtx -s -p4 -x1000000 -y5 -g -c -t32 -d4 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.50_4.mtx -s -p17 -u2 -o -g -c -t4 -d4 -r2 
+**command: ./gpu_perman -k6 -a -f erdos_int/37_0.50_3.mtx -s -p4 -x4000000 -y5 -g -c -t2 -d2 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.50_4.mtx -s -p17 -u4 -o -g -c -t64 -d8 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.30_4.mtx -s -p17 -u1 -o -g -c -t32 -d8 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.50_4.mtx -s -p5 -u4 -o -d2 
+**command: ./gpu_perman -k6 -a -f erdos_int/33_0.80_3.mtx -s -p4 -x4000000 -y1 -g -c -t32 -d4 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.30_4.mtx -s -p5 -u2 -o -d8 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.50_4.mtx -s -p17 -u1 -o -g -c -t1 -d1 
+**command: ./gpu_perman -k6 -f erdos_real/30_0.10_4.mtx -p7 -u1 -o -g -c -t32 -d8 
+**command: ./gpu_perman -k6 -a -f erdos_int/32_0.40_3.mtx -s -p4 -x1000000 -y1 -g -c -t2 -d2 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.40_4.mtx -s -p5 -u2 -o -d8 
+**command: ./gpu_perman -k6 -f erdos_real/40_0.10_4.mtx -p5 -u4 -o -d4 
+**command: ./cpu_perman -k5 -f erdos_int/34_0.30_3.mtx -s -p1 -c -t8 -q -v 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.50_4.mtx -s -p5 -u1 -o -d2 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.50_4.mtx -s -p5 -u4 -o -d8 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.30_4.mtx -s -p17 -u1 -o -g -c -t2 -d2 
+**command: ./gpu_perman -k6 -a -f erdos_int/32_0.90_3.mtx -s -p4 -x2000000 -y1 -g -c -t32 -d4 
+**command: ./gpu_perman -k6 -f erdos_int/38_0.30_4.mtx -s -p5 -u1 -o -d2 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.30_4.mtx -s -p17 -u4 -o -g -c -t1 -d1 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.40_4.mtx -s -p5 -u4 -o -d8 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.50_4.mtx -s -p17 -u1 -o -g -c -t4 -d4 
+**command: ./gpu_perman -k6 -f erdos_real/30_0.10_4.mtx -p5 -u4 -o -d4 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.40_4.mtx -s -p5 -u1 -o -d4 
+**command: ./gpu_perman -k6 -a -f erdos_int/40_0.10_3.mtx -s -p4 -x4000000 -y1 -g -c -t1 -d1 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.30_4.mtx -s -p5 -u4 -o -d1 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.30_4.mtx -s -p5 -u2 -o -d8 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.30_4.mtx -s -p5 -u1 -o -d2 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.40_4.mtx -s -p5 -u1 -o -d2 -r1 
+**command: ./gpu_perman -k6 -a -f erdos_int/33_0.50_3.mtx -s -p4 -x4000000 -y1 -g -c -t32 -d4 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.50_4.mtx -s -p17 -u2 -o -g -c -t32 -d8 -r2 
+**command: ./gpu_perman -k6 -f erdos_real/40_0.10_4.mtx -p7 -u1 -o -g -c -t64 -d8 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.40_4.mtx -s -p17 -u4 -o -g -c -t8 -d8 -r2 
+**command: ./gpu_perman -k6 -a -f erdos_int/30_0.60_3.mtx -s -p4 -x2000000 -y5 -g -c -t32 -d4 
+**command: ./gpu_perman -k6 -f erdos_int/38_0.40_4.mtx -s -p5 -u1 -o -d1 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.50_4.mtx -s -p17 -u2 -o -g -c -t4 -d4 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.30_4.mtx -s -p5 -u4 -o -d8 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.30_4.mtx -s -p17 -u1 -o -g -c -t8 -d8 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.50_4.mtx -s -p17 -u4 -o -g -c -t1 -d1 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.30_4.mtx -s -p5 -u4 -o -d1 
+**command: ./gpu_perman -k6 -a -f erdos_int/39_0.30_3.mtx -s -p4 -y1 -g -c -t4 -d4 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.40_4.mtx -s -p17 -u2 -o -g -c -t64 -d8 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.40_4.mtx -s -p5 -u4 -o -d2 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.30_4.mtx -s -p5 -u2 -o -d1 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.30_4.mtx -s -p17 -u2 -o -g -c -t1 -d1 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.50_4.mtx -s -p17 -u1 -o -g -c -t2 -d2 
+**command: ./gpu_perman -k6 -f erdos_int/38_0.30_4.mtx -s -p5 -u1 -o -d8 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.30_4.mtx -s -p5 -u4 -o -d1 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.40_4.mtx -s -p5 -u2 -o -d2 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.50_4.mtx -s -p17 -u1 -o -g -c -t1 -d1 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.40_4.mtx -s -p5 -u4 -o -d1 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.40_4.mtx -s -p17 -u1 -o -g -c -t4 -d4 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.50_4.mtx -s -p17 -u1 -o -g -c -t2 -d2 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.40_4.mtx -s -p17 -u1 -o -g -c -t2 -d2 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.50_4.mtx -s -p17 -u4 -o -g -c -t8 -d8 -r2 
+**command: ./gpu_perman -k6 -a -f erdos_int/33_0.50_3.mtx -s -p4 -x1000000 -y5 -g -c -t32 -d4 
+**command: ./gpu_perman -k6 -a -f erdos_int/33_0.80_3.mtx -s -p4 -x4000000 -y1 -g -c -t2 -d2 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.40_4.mtx -s -p5 -u2 -o -d2 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.40_4.mtx -s -p5 -u4 -o -d1 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.50_4.mtx -s -p17 -u1 -o -g -c -t8 -d8 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.30_4.mtx -s -p5 -u1 -o -d1 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.40_4.mtx -s -p17 -u2 -o -g -c -t32 -d8 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.30_4.mtx -s -p17 -u1 -o -g -c -t2 -d2 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.50_4.mtx -s -p17 -u1 -o -g -c -t1 -d1 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.50_4.mtx -s -p5 -u2 -o -d4 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.30_4.mtx -s -p17 -u1 -o -g -c -t4 -d4 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.40_4.mtx -s -p5 -u4 -o -d4 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.40_4.mtx -s -p17 -u1 -o -g -c -t32 -d8 
+**command: ./gpu_perman -k6 -f erdos_int/38_0.30_4.mtx -s -p17 -u1 -o -g -c -t1 -d1 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.50_4.mtx -s -p17 -u1 -o -g -c -t8 -d8 -r2 
+**command: ./gpu_perman -k6 -a -f erdos_int/39_0.30_3.mtx -s -p4 -x4000000 -y1 -g -c -t4 -d4 
+**command: ./gpu_perman -k6 -f erdos_real/40_0.10_4.mtx -p7 -u4 -o -g -c -t4 -d4 
+**command: ./gpu_perman -k6 -a -f erdos_int/39_0.30_3.mtx -s -p4 -x4000000 -y1 -g -c -t32 -d4 
+**command: ./gpu_perman -k6 -f erdos_real/40_0.10_4.mtx -p5 -u1 -o -d4 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.50_4.mtx -s -p5 -u2 -o -d2 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.50_4.mtx -s -p5 -u1 -o -d2 
+**command: ./gpu_perman -k6 -f erdos_int/38_0.30_4.mtx -s -p5 -u1 -o -d4 
+**command: ./gpu_perman -k6 -a -f erdos_int/39_0.20_3.mtx -s -p4 -x4000000 -y1 -g -c -t32 -d4 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.40_4.mtx -s -p5 -u2 -o -d1 
+**command: ./gpu_perman -k6 -f erdos_int/38_0.30_4.mtx -s -p17 -u2 -o -g -c -t8 -d8 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.30_4.mtx -s -p5 -u1 -o -d1 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.40_4.mtx -s -p17 -u1 -o -g -c -t8 -d8 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.50_4.mtx -s -p17 -u4 -o -g -c -t1 -d1 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.50_4.mtx -s -p17 -u1 -o -g -c -t2 -d2 -r2 
+**command: ./gpu_perman -k6 -f erdos_real/40_0.10_4.mtx -p7 -u2 -o -g -c -t4 -d4 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.40_4.mtx -s -p5 -u1 -o -d1 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.50_4.mtx -s -p5 -u2 -o -d4 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.50_4.mtx -s -p17 -u1 -o -g -c -t2 -d2 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.40_4.mtx -s -p5 -u1 -o -d4 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.30_4.mtx -s -p5 -u1 -o -d1 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.30_4.mtx -s -p17 -u1 -o -g -c -t2 -d2 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.30_4.mtx -s -p17 -u1 -o -g -c -t32 -d8 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.40_4.mtx -s -p17 -u2 -o -g -c -t1 -d1 
+**command: ./gpu_perman -k6 -f erdos_real/30_0.10_4.mtx -p7 -u4 -o -g -c -t2 -d2 
+**command: ./gpu_perman -k6 -f erdos_real/40_0.10_4.mtx -p7 -u4 -o -g -c -t1 -d1 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.40_4.mtx -s -p5 -u2 -o -d4 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.50_4.mtx -s -p5 -u4 -o -d8 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.50_4.mtx -s -p5 -u4 -o -d4 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.30_4.mtx -s -p5 -u4 -o -d1 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.50_4.mtx -s -p17 -u1 -o -g -c -t8 -d8 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.40_4.mtx -s -p17 -u4 -o -g -c -t64 -d8 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.50_4.mtx -s -p17 -u2 -o -g -c -t8 -d8 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.50_4.mtx -s -p5 -u4 -o -d8 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.40_4.mtx -s -p5 -u4 -o -d1 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.40_4.mtx -s -p5 -u2 -o -d8 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.50_4.mtx -s -p17 -u4 -o -g -c -t32 -d8 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.40_4.mtx -s -p17 -u4 -o -g -c -t2 -d2 
+**command: ./gpu_perman -k6 -f erdos_int/38_0.30_4.mtx -s -p5 -u4 -o -d8 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.40_4.mtx -s -p17 -u1 -o -g -c -t8 -d8 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.40_4.mtx -s -p17 -u2 -o -g -c -t2 -d2 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.40_4.mtx -s -p17 -u2 -o -g -c -t8 -d8 -r2 
+**command: ./gpu_perman -k6 -f erdos_real/40_0.10_4.mtx -p5 -o -d8 
+**command: ./gpu_perman -k6 -f erdos_real/40_0.10_4.mtx -p7 -u1 -o -g -c -t4 -d4 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.40_4.mtx -s -p17 -u1 -o -g -c -t4 -d4 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.30_4.mtx -s -p5 -u1 -o -d1 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.30_4.mtx -s -p5 -u4 -o -d1 -r1 
+**command: ./gpu_perman -k6 -f erdos_real/30_0.10_4.mtx -p5 -u1 -o -d1 
+**command: ./gpu_perman -k6 -f erdos_int/38_0.30_4.mtx -s -p5 -u2 -o -d2 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.40_4.mtx -s -p5 -u1 -o -d2 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.30_4.mtx -s -p5 -u2 -o -d1 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.40_4.mtx -s -p17 -u4 -o -g -c -t4 -d4 
+**command: ./gpu_perman -k6 -a -f erdos_int/33_0.50_3.mtx -s -p4 -x4000000 -y5 -g -c -t1 -d1 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.50_4.mtx -s -p17 -u4 -o -g -c -t64 -d8 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.40_4.mtx -s -p5 -u4 -o -d8 
+**command: ./gpu_perman -k6 -a -f erdos_int/39_0.30_3.mtx -s -p4 -x2000000 -y1 -g -c -t32 -d4 
+**command: ./gpu_perman -k6 -f erdos_int/38_0.40_4.mtx -s -p5 -u1 -o -d4 
+**command: ./gpu_perman -k6 -f erdos_real/30_0.10_4.mtx -p5 -u4 -o -d2 
+**command: ./gpu_perman -k6 -f erdos_real/40_0.10_4.mtx -p5 -u2 -o -d1 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.50_4.mtx -s -p17 -u4 -o -g -c -t64 -d8 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.50_4.mtx -s -p5 -u1 -o -d4 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.50_4.mtx -s -p5 -u4 -o -d1 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.50_4.mtx -s -p17 -u2 -o -g -c -t2 -d2 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.40_4.mtx -s -p17 -u4 -o -g -c -t2 -d2 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.50_4.mtx -s -p5 -u4 -o -d4 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.40_4.mtx -s -p17 -u1 -o -g -c -t64 -d8 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.50_4.mtx -s -p17 -u1 -o -g -c -t64 -d8 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/38_0.30_4.mtx -s -p17 -u1 -o -g -c -t8 -d8 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.30_4.mtx -s -p5 -u4 -o -d2 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.40_4.mtx -s -p17 -u4 -o -g -c -t64 -d8 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.50_4.mtx -s -p17 -u2 -o -g -c -t64 -d8 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.40_4.mtx -s -p5 -u1 -o -d8 
+**command: ./gpu_perman -k6 -f erdos_real/40_0.10_4.mtx -p7 -u4 -o -g -c -t64 -d8 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.40_4.mtx -s -p17 -u1 -o -g -c -t1 -d1 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.30_4.mtx -s -p17 -u4 -o -g -c -t1 -d1 
+**command: ./gpu_perman -k6 -f erdos_real/40_0.10_4.mtx -p5 -o -d1 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.40_4.mtx -s -p5 -u4 -o -d2 
+**command: ./gpu_perman -k6 -a -f erdos_int/37_0.50_3.mtx -s -p4 -x4000000 -y1 -g -c -t32 -d4 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.40_4.mtx -s -p5 -u4 -o -d8 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.50_4.mtx -s -p17 -u4 -o -g -c -t32 -d8 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.40_4.mtx -s -p17 -u2 -o -g -c -t2 -d2 
+**command: ./gpu_perman -k6 -f erdos_real/30_0.10_4.mtx -p5 -u1 -o -d8 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.50_4.mtx -s -p17 -u4 -o -g -c -t2 -d2 -r2 
+**command: ./gpu_perman -k6 -a -f erdos_int/39_0.90_3.mtx -s -p4 -x4000000 -y1 -g -c -t32 -d4 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.40_4.mtx -s -p17 -u4 -o -g -c -t8 -d8 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.30_4.mtx -s -p5 -u2 -o -d4 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.40_4.mtx -s -p17 -u2 -o -g -c -t1 -d1 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.40_4.mtx -s -p5 -u4 -o -d2 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.30_4.mtx -s -p17 -u4 -o -g -c -t64 -d8 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.40_4.mtx -s -p17 -u4 -o -g -c -t8 -d8 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.40_4.mtx -s -p5 -u2 -o -d2 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.40_4.mtx -s -p5 -u2 -o -d2 
+**command: ./gpu_perman -k6 -a -f erdos_int/39_0.90_3.mtx -s -p4 -x2000000 -y1 -g -c -t2 -d2 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.30_4.mtx -s -p17 -u2 -o -g -c -t64 -d8 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.50_4.mtx -s -p5 -u4 -o -d2 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.30_4.mtx -s -p17 -u1 -o -g -c -t2 -d2 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.10_4.mtx -s -p17 -u1 -o -g -c -t4 -d4 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.40_4.mtx -s -p5 -u1 -o -d1 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.40_4.mtx -s -p17 -u4 -o -g -c -t64 -d8 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.50_4.mtx -s -p5 -u1 -o -d1 -r1 
+**command: ./gpu_perman -k6 -a -f erdos_int/39_0.20_3.mtx -s -p4 -x1000000 -y5 -g -c -t2 -d2 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.30_4.mtx -s -p17 -u2 -o -g -c -t1 -d1 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.50_4.mtx -s -p5 -u1 -o -d4 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.50_4.mtx -s -p17 -u4 -o -g -c -t2 -d2 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.50_4.mtx -s -p17 -u4 -o -g -c -t4 -d4 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.30_4.mtx -s -p5 -u2 -o -d2 
+**command: ./gpu_perman -k6 -a -f erdos_int/37_0.50_3.mtx -s -p4 -x1000000 -y1 -g -c -t1 -d1 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.40_4.mtx -s -p5 -u4 -o -d4 
+**command: ./gpu_perman -k6 -a -f erdos_int/39_0.30_3.mtx -s -p4 -x4000000 -y1 -g -c -t1 -d1 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.50_4.mtx -s -p17 -u1 -o -g -c -t64 -d8 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.30_4.mtx -s -p5 -u1 -o -d4 
+**command: ./gpu_perman -k6 -f erdos_int/38_0.30_4.mtx -s -p17 -u1 -o -g -c -t32 -d8 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.40_4.mtx -s -p5 -u2 -o -d4 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.30_4.mtx -s -p5 -u1 -o -d2 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.40_4.mtx -s -p5 -u2 -o -d1 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.30_4.mtx -s -p17 -u1 -o -g -c -t2 -d2 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.30_4.mtx -s -p17 -u2 -o -g -c -t2 -d2 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.50_4.mtx -s -p17 -u4 -o -g -c -t2 -d2 -r2 
+**command: ./gpu_perman -k6 -a -f erdos_int/39_0.30_3.mtx -s -p4 -x2000000 -y1 -g -c -t4 -d4 
+**command: ./gpu_perman -k6 -f erdos_real/30_0.10_4.mtx -p7 -u4 -o -g -c -t64 -d8 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.30_4.mtx -s -p5 -u1 -o -d1 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.40_4.mtx -s -p5 -u2 -o -d8 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.40_4.mtx -s -p17 -u2 -o -g -c -t4 -d4 
+**command: ./gpu_perman -k6 -f erdos_real/40_0.10_4.mtx -p5 -u2 -o -d8 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.50_4.mtx -s -p5 -u4 -o -d2 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.30_4.mtx -s -p17 -u4 -o -g -c -t32 -d8 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.40_4.mtx -s -p17 -u2 -o -g -c -t64 -d8 -r2 
+**command: ./gpu_perman -k6 -f erdos_real/40_0.10_4.mtx -p7 -u4 -o -g -c -t32 -d8 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.40_4.mtx -s -p17 -u1 -o -g -c -t64 -d8 
+**command: ./gpu_perman -k6 -f erdos_real/40_0.10_4.mtx -p7 -u2 -o -g -c -t2 -d2 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.30_4.mtx -s -p17 -u4 -o -g -c -t4 -d4 -r2 
+**command: ./gpu_perman -k6 -a -f erdos_int/39_0.90_3.mtx -s -p4 -x4000000 -y5 -g -c -t4 -d4 
+**command: ./gpu_perman -k6 -a -f erdos_int/39_0.30_3.mtx -s -p4 -x4000000 -y5 -g -c -t32 -d4 
+**command: ./gpu_perman -k6 -f erdos_real/30_0.10_4.mtx -p7 -u4 -o -g -c -t32 -d8 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.50_4.mtx -s -p5 -u2 -o -d1 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.50_4.mtx -s -p17 -u2 -o -g -c -t64 -d8 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.40_4.mtx -s -p17 -u4 -o -g -c -t8 -d8 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.50_4.mtx -s -p17 -u2 -o -g -c -t2 -d2 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.40_4.mtx -s -p5 -u4 -o -d8 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.40_4.mtx -s -p17 -u2 -o -g -c -t1 -d1 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.50_4.mtx -s -p5 -u2 -o -d1 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/38_0.40_4.mtx -s -p5 -u1 -o -d2 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.50_4.mtx -s -p5 -u2 -o -d8 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.40_4.mtx -s -p5 -u4 -o -d8 
+**command: ./gpu_perman -k6 -f erdos_int/38_0.30_4.mtx -s -p5 -u1 -o -d2 
+**command: ./gpu_perman -k6 -a -f erdos_int/37_0.50_3.mtx -s -p4 -x4000000 -y1 -g -c -t4 -d4 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.40_4.mtx -s -p5 -u2 -o -d4 
+**command: ./gpu_perman -k6 -a -f erdos_int/37_0.50_3.mtx -s -p4 -x1000000 -y5 -g -c -t32 -d4 
+**command: ./gpu_perman -k6 -f erdos_real/40_0.10_4.mtx -p5 -u1 -o -d2 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.50_4.mtx -s -p17 -u2 -o -g -c -t2 -d2 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.40_4.mtx -s -p17 -u1 -o -g -c -t64 -d8 -r2 
+**command: ./gpu_perman -k6 -a -f erdos_int/39_0.30_3.mtx -s -p4 -x4000000 -y1 -g -c -t2 -d2 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.50_4.mtx -s -p17 -u1 -o -g -c -t32 -d8 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.30_4.mtx -s -p17 -u2 -o -g -c -t32 -d8 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.50_4.mtx -s -p17 -u1 -o -g -c -t64 -d8 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.40_4.mtx -s -p5 -u2 -o -d4 -r1 
+**command: ./gpu_perman -k6 -f erdos_real/30_0.10_4.mtx -p5 -u2 -o -d2 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.50_4.mtx -s -p5 -u2 -o -d2 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.30_4.mtx -s -p5 -u2 -o -d8 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.50_4.mtx -s -p5 -u2 -o -d2 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.40_4.mtx -s -p5 -u2 -o -d2 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.40_4.mtx -s -p17 -u4 -o -g -c -t64 -d8 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.40_4.mtx -s -p5 -u2 -o -d4 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.40_4.mtx -s -p17 -u2 -o -g -c -t8 -d8 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/38_0.30_4.mtx -s -p5 -u4 -o -d1 
+**command: ./gpu_perman -k6 -f erdos_int/38_0.30_4.mtx -s -p5 -u4 -o -d1 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.30_4.mtx -s -p17 -u1 -o -g -c -t1 -d1 -r2 
+**command: ./gpu_perman -k6 -a -f erdos_int/32_0.90_3.mtx -s -p4 -x2000000 -y1 -g -c -t2 -d2 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.40_4.mtx -s -p17 -u4 -o -g -c -t32 -d8 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.50_4.mtx -s -p17 -u2 -o -g -c -t1 -d1 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.30_4.mtx -s -p5 -u1 -o -d2 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/38_0.30_4.mtx -s -p5 -u2 -o -d4 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.40_4.mtx -s -p17 -u1 -o -g -c -t1 -d1 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.50_4.mtx -s -p5 -u2 -o -d4 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.50_4.mtx -s -p5 -u1 -o -d1 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.40_4.mtx -s -p5 -u1 -o -d2 -r1 
+**command: ./gpu_perman -k6 -f erdos_int/36_0.40_4.mtx -s -p17 -u1 -o -g -c -t32 -d8 -r2 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.10_4.mtx -s -p17 -u2 -o -g -c -t4 -d4 
+**command: ./gpu_perman -k6 -f erdos_int/34_0.30_4.mtx -s -p5 -u2 -o -d1 
+**command: ./gpu_perman -k6 -f erdos_int/32_0.30_4.mtx -s -p17 -u4 -o -g -c -t64 -d8 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.40_4.mtx -s -p5 -u2 -o -d8 -r1 
+**command: ./gpu_perman -k6 -f erdos_real/40_0.10_4.mtx -p5 -o -d4 
+**command: ./gpu_perman -k6 -f erdos_int/30_0.50_4.mtx -s -p5 -u4 -o -d1 
+**command: ./gpu_perman -k6 -a -f erdos_int/31_0.90_3.mtx -s -p4 -x1000000 -y1 -g -c -t4 -d4 
+columns: ['gpu_approximation_sparse'
+ 'gpu_perman64_rasmussen_multigpucpu_chunks_sparse'
+ 'gpu_perman_approximation_multigpucpu_chunks_sparse'
+ 'gpu_perman_xlocal_sparse' 'gpu_perman_xshared_coalescing_mshared_sparse'
+ 'gpu_perman_xshared_coalescing_sparse' 'gpu_perman_xshared_sparse'
+ 'gpu_rasmussen_sparse']
+chosen_order: ['gpu_perman_xlocal', 'gpu_perman_xlocal_sparse', 'gpu_perman_xshared', 'gpu_perman_xshared_sparse', 'gpu_perman_xshared_coalescing', 'gpu_perman_xshared_coalescing_sparse', 'gpu_perman_xshared_coalescing_mshared', 'gpu_perman_xshared_coalescing_mshared_sparse', 'gpu_perman_xshared_coalescing_mshared_skipper']
+returning: ['gpu_perman_xlocal_sparse', 'gpu_perman_xshared_sparse', 'gpu_perman_xshared_coalescing_sparse', 'gpu_perman_xshared_coalescing_mshared_sparse']
+columns: ['gpu_approximation_sparse'
+ 'gpu_perman64_rasmussen_multigpucpu_chunks_sparse'
+ 'gpu_perman_approximation_multigpucpu_chunks_sparse'
+ 'gpu_perman_xlocal_sparse' 'gpu_perman_xshared_coalescing_mshared_sparse'
+ 'gpu_perman_xshared_coalescing_sparse' 'gpu_perman_xshared_sparse'
+ 'gpu_rasmussen_sparse']
+chosen_order: ['gpu_perman_xlocal', 'gpu_perman_xlocal_sparse', 'gpu_perman_xshared', 'gpu_perman_xshared_sparse', 'gpu_perman_xshared_coalescing', 'gpu_perman_xshared_coalescing_sparse', 'gpu_perman_xshared_coalescing_mshared', 'gpu_perman_xshared_coalescing_mshared_sparse', 'gpu_perman_xshared_coalescing_mshared_skipper']
+returning: ['gpu_perman_xlocal_sparse', 'gpu_perman_xshared_sparse', 'gpu_perman_xshared_coalescing_sparse', 'gpu_perman_xshared_coalescing_mshared_sparse']
+columns: ['gpu_approximation_sparse'
+ 'gpu_perman64_rasmussen_multigpucpu_chunks_sparse'
+ 'gpu_perman_approximation_multigpucpu_chunks_sparse'
+ 'gpu_perman_xlocal_sparse' 'gpu_perman_xshared_coalescing_mshared_sparse'
+ 'gpu_perman_xshared_coalescing_sparse' 'gpu_perman_xshared_sparse'
+ 'gpu_rasmussen_sparse']
+chosen_order: ['gpu_perman_xlocal', 'gpu_perman_xlocal_sparse', 'gpu_perman_xshared', 'gpu_perman_xshared_sparse', 'gpu_perman_xshared_coalescing', 'gpu_perman_xshared_coalescing_sparse', 'gpu_perman_xshared_coalescing_mshared', 'gpu_perman_xshared_coalescing_mshared_sparse', 'gpu_perman_xshared_coalescing_mshared_skipper']
+returning: ['gpu_perman_xlocal_sparse', 'gpu_perman_xshared_sparse', 'gpu_perman_xshared_coalescing_sparse', 'gpu_perman_xshared_coalescing_mshared_sparse']
+columns: ['gpu_approximation_sparse'
+ 'gpu_perman64_rasmussen_multigpucpu_chunks_sparse'
+ 'gpu_perman_approximation_multigpucpu_chunks_sparse'
+ 'gpu_perman_xlocal_sparse' 'gpu_perman_xshared_coalescing_mshared_sparse'
+ 'gpu_perman_xshared_coalescing_sparse' 'gpu_perman_xshared_sparse'
+ 'gpu_rasmussen_sparse']
+chosen_order: ['gpu_perman_xlocal', 'gpu_perman_xlocal_sparse', 'gpu_perman_xshared', 'gpu_perman_xshared_sparse', 'gpu_perman_xshared_coalescing', 'gpu_perman_xshared_coalescing_sparse', 'gpu_perman_xshared_coalescing_mshared', 'gpu_perman_xshared_coalescing_mshared_sparse', 'gpu_perman_xshared_coalescing_mshared_skipper']
+returning: ['gpu_perman_xlocal_sparse', 'gpu_perman_xshared_sparse', 'gpu_perman_xshared_coalescing_sparse', 'gpu_perman_xshared_coalescing_mshared_sparse']
+columns: ['gpu_approximation_sparse'
+ 'gpu_perman64_rasmussen_multigpucpu_chunks_sparse'
+ 'gpu_perman_approximation_multigpucpu_chunks_sparse'
+ 'gpu_perman_xlocal_sparse' 'gpu_perman_xshared_coalescing_mshared_sparse'
+ 'gpu_perman_xshared_coalescing_sparse' 'gpu_perman_xshared_sparse'
+ 'gpu_rasmussen_sparse']
+chosen_order: ['gpu_perman_xlocal', 'gpu_perman_xlocal_sparse', 'gpu_perman_xshared', 'gpu_perman_xshared_sparse', 'gpu_perman_xshared_coalescing', 'gpu_perman_xshared_coalescing_sparse', 'gpu_perman_xshared_coalescing_mshared', 'gpu_perman_xshared_coalescing_mshared_sparse', 'gpu_perman_xshared_coalescing_mshared_skipper']
+returning: ['gpu_perman_xlocal_sparse', 'gpu_perman_xshared_sparse', 'gpu_perman_xshared_coalescing_sparse', 'gpu_perman_xshared_coalescing_mshared_sparse']
+columns: ['gpu_approximation_sparse'
+ 'gpu_perman64_rasmussen_multigpucpu_chunks_sparse'
+ 'gpu_perman_approximation_multigpucpu_chunks_sparse'
+ 'gpu_perman_xlocal_sparse' 'gpu_perman_xshared_coalescing_mshared_sparse'
+ 'gpu_perman_xshared_coalescing_sparse' 'gpu_perman_xshared_sparse'
+ 'gpu_rasmussen_sparse']
+chosen_order: ['gpu_perman_xlocal', 'gpu_perman_xlocal_sparse', 'gpu_perman_xshared', 'gpu_perman_xshared_sparse', 'gpu_perman_xshared_coalescing', 'gpu_perman_xshared_coalescing_sparse', 'gpu_perman_xshared_coalescing_mshared', 'gpu_perman_xshared_coalescing_mshared_sparse', 'gpu_perman_xshared_coalescing_mshared_skipper']
+returning: ['gpu_perman_xlocal_sparse', 'gpu_perman_xshared_sparse', 'gpu_perman_xshared_coalescing_sparse', 'gpu_perman_xshared_coalescing_mshared_sparse']
+columns: ['approximation_mulltigpucpu_chunks' 'gpu_approximation'
+ 'gpu_perman64_xshared_coalescing_mshared_multigpucpu_chunks'
+ 'gpu_perman64_xshared_mshared_multigpu' 'gpu_perman_xlocal'
+ 'gpu_perman_xshared' 'gpu_perman_xshared_coalescing'
+ 'gpu_perman_xshared_coalescing_mshared' 'gpu_rasmussen'
+ 'rasmussen_multigpucpu_chunks']
+chosen_order: ['gpu_perman_xlocal', 'gpu_perman_xlocal_sparse', 'gpu_perman_xshared', 'gpu_perman_xshared_sparse', 'gpu_perman_xshared_coalescing', 'gpu_perman_xshared_coalescing_sparse', 'gpu_perman_xshared_coalescing_mshared', 'gpu_perman_xshared_coalescing_mshared_sparse', 'gpu_perman_xshared_coalescing_mshared_skipper']
+returning: ['gpu_perman_xlocal', 'gpu_perman_xshared', 'gpu_perman_xshared_coalescing', 'gpu_perman_xshared_coalescing_mshared']
+columns: ['approximation_mulltigpucpu_chunks' 'gpu_approximation'
+ 'gpu_perman64_xshared_coalescing_mshared_multigpucpu_chunks'
+ 'gpu_perman64_xshared_mshared_multigpu' 'gpu_perman_xlocal'
+ 'gpu_perman_xshared' 'gpu_perman_xshared_coalescing'
+ 'gpu_perman_xshared_coalescing_mshared' 'gpu_rasmussen'
+ 'rasmussen_multigpucpu_chunks']
+chosen_order: ['gpu_perman_xlocal', 'gpu_perman_xlocal_sparse', 'gpu_perman_xshared', 'gpu_perman_xshared_sparse', 'gpu_perman_xshared_coalescing', 'gpu_perman_xshared_coalescing_sparse', 'gpu_perman_xshared_coalescing_mshared', 'gpu_perman_xshared_coalescing_mshared_sparse', 'gpu_perman_xshared_coalescing_mshared_skipper']
+returning: ['gpu_perman_xlocal', 'gpu_perman_xshared', 'gpu_perman_xshared_coalescing', 'gpu_perman_xshared_coalescing_mshared']
+columns: ['approximation_mulltigpucpu_chunks' 'gpu_approximation'
+ 'gpu_perman64_xshared_coalescing_mshared_multigpucpu_chunks'
+ 'gpu_perman64_xshared_mshared_multigpu' 'gpu_perman_xlocal'
+ 'gpu_perman_xshared' 'gpu_perman_xshared_coalescing'
+ 'gpu_perman_xshared_coalescing_mshared' 'gpu_rasmussen'
+ 'rasmussen_multigpucpu_chunks']
+chosen_order: ['gpu_perman_xlocal', 'gpu_perman_xlocal_sparse', 'gpu_perman_xshared', 'gpu_perman_xshared_sparse', 'gpu_perman_xshared_coalescing', 'gpu_perman_xshared_coalescing_sparse', 'gpu_perman_xshared_coalescing_mshared', 'gpu_perman_xshared_coalescing_mshared_sparse', 'gpu_perman_xshared_coalescing_mshared_skipper']
+returning: ['gpu_perman_xlocal', 'gpu_perman_xshared', 'gpu_perman_xshared_coalescing', 'gpu_perman_xshared_coalescing_mshared']
+columns: ['approximation_mulltigpucpu_chunks' 'gpu_approximation'
+ 'gpu_perman64_xshared_coalescing_mshared_multigpucpu_chunks'
+ 'gpu_perman64_xshared_mshared_multigpu' 'gpu_perman_xlocal'
+ 'gpu_perman_xshared' 'gpu_perman_xshared_coalescing'
+ 'gpu_perman_xshared_coalescing_mshared' 'gpu_rasmussen'
+ 'rasmussen_multigpucpu_chunks']
+chosen_order: ['gpu_perman_xlocal', 'gpu_perman_xlocal_sparse', 'gpu_perman_xshared', 'gpu_perman_xshared_sparse', 'gpu_perman_xshared_coalescing', 'gpu_perman_xshared_coalescing_sparse', 'gpu_perman_xshared_coalescing_mshared', 'gpu_perman_xshared_coalescing_mshared_sparse', 'gpu_perman_xshared_coalescing_mshared_skipper']
+returning: ['gpu_perman_xlocal', 'gpu_perman_xshared', 'gpu_perman_xshared_coalescing', 'gpu_perman_xshared_coalescing_mshared']
+columns: ['approximation_mulltigpucpu_chunks' 'gpu_approximation'
+ 'gpu_perman64_xshared_coalescing_mshared_multigpucpu_chunks'
+ 'gpu_perman64_xshared_mshared_multigpu' 'gpu_perman_xlocal'
+ 'gpu_perman_xshared' 'gpu_perman_xshared_coalescing'
+ 'gpu_perman_xshared_coalescing_mshared' 'gpu_rasmussen'
+ 'rasmussen_multigpucpu_chunks']
+chosen_order: ['gpu_perman_xlocal', 'gpu_perman_xlocal_sparse', 'gpu_perman_xshared', 'gpu_perman_xshared_sparse', 'gpu_perman_xshared_coalescing', 'gpu_perman_xshared_coalescing_sparse', 'gpu_perman_xshared_coalescing_mshared', 'gpu_perman_xshared_coalescing_mshared_sparse', 'gpu_perman_xshared_coalescing_mshared_skipper']
+returning: ['gpu_perman_xlocal', 'gpu_perman_xshared', 'gpu_perman_xshared_coalescing', 'gpu_perman_xshared_coalescing_mshared']
+columns: ['approximation_mulltigpucpu_chunks' 'gpu_approximation'
+ 'gpu_perman_xlocal' 'gpu_perman_xshared' 'gpu_perman_xshared_coalescing'
+ 'gpu_perman_xshared_coalescing_mshared' 'gpu_rasmussen'
+ 'rasmussen_multigpucpu_chunks']
+chosen_order: ['gpu_perman_xlocal', 'gpu_perman_xlocal_sparse', 'gpu_perman_xshared', 'gpu_perman_xshared_sparse', 'gpu_perman_xshared_coalescing', 'gpu_perman_xshared_coalescing_sparse', 'gpu_perman_xshared_coalescing_mshared', 'gpu_perman_xshared_coalescing_mshared_sparse', 'gpu_perman_xshared_coalescing_mshared_skipper']
+returning: ['gpu_perman_xlocal', 'gpu_perman_xshared', 'gpu_perman_xshared_coalescing', 'gpu_perman_xshared_coalescing_mshared']
+columns: ['gpu_perman_xlocal_sparse' 'gpu_perman_xshared_coalescing_mshared_sparse'
+ 'gpu_perman_xshared_coalescing_sparse' 'gpu_perman_xshared_sparse']
+chosen_order: ['gpu_perman_xlocal', 'gpu_perman_xlocal_sparse', 'gpu_perman_xshared', 'gpu_perman_xshared_sparse', 'gpu_perman_xshared_coalescing', 'gpu_perman_xshared_coalescing_sparse', 'gpu_perman_xshared_coalescing_mshared', 'gpu_perman_xshared_coalescing_mshared_sparse', 'gpu_perman_xshared_coalescing_mshared_skipper']
+returning: ['gpu_perman_xlocal_sparse', 'gpu_perman_xshared_sparse', 'gpu_perman_xshared_coalescing_sparse', 'gpu_perman_xshared_coalescing_mshared_sparse']
+columns: ['gpu_perman_xlocal_sparse' 'gpu_perman_xshared_coalescing_mshared_sparse'
+ 'gpu_perman_xshared_coalescing_sparse' 'gpu_perman_xshared_sparse']
+chosen_order: ['gpu_perman_xlocal', 'gpu_perman_xlocal_sparse', 'gpu_perman_xshared', 'gpu_perman_xshared_sparse', 'gpu_perman_xshared_coalescing', 'gpu_perman_xshared_coalescing_sparse', 'gpu_perman_xshared_coalescing_mshared', 'gpu_perman_xshared_coalescing_mshared_sparse', 'gpu_perman_xshared_coalescing_mshared_skipper']
+returning: ['gpu_perman_xlocal_sparse', 'gpu_perman_xshared_sparse', 'gpu_perman_xshared_coalescing_sparse', 'gpu_perman_xshared_coalescing_mshared_sparse']
+columns: ['gpu_perman_xlocal_sparse' 'gpu_perman_xshared_coalescing_mshared_sparse'
+ 'gpu_perman_xshared_coalescing_sparse' 'gpu_perman_xshared_sparse']
+chosen_order: ['gpu_perman_xlocal', 'gpu_perman_xlocal_sparse', 'gpu_perman_xshared', 'gpu_perman_xshared_sparse', 'gpu_perman_xshared_coalescing', 'gpu_perman_xshared_coalescing_sparse', 'gpu_perman_xshared_coalescing_mshared', 'gpu_perman_xshared_coalescing_mshared_sparse', 'gpu_perman_xshared_coalescing_mshared_skipper']
+returning: ['gpu_perman_xlocal_sparse', 'gpu_perman_xshared_sparse', 'gpu_perman_xshared_coalescing_sparse', 'gpu_perman_xshared_coalescing_mshared_sparse']
+columns: ['gpu_perman_xlocal_sparse' 'gpu_perman_xshared_coalescing_mshared_sparse'
+ 'gpu_perman_xshared_coalescing_sparse' 'gpu_perman_xshared_sparse']
+chosen_order: ['gpu_perman_xlocal', 'gpu_perman_xlocal_sparse', 'gpu_perman_xshared', 'gpu_perman_xshared_sparse', 'gpu_perman_xshared_coalescing', 'gpu_perman_xshared_coalescing_sparse', 'gpu_perman_xshared_coalescing_mshared', 'gpu_perman_xshared_coalescing_mshared_sparse', 'gpu_perman_xshared_coalescing_mshared_skipper']
+returning: ['gpu_perman_xlocal_sparse', 'gpu_perman_xshared_sparse', 'gpu_perman_xshared_coalescing_sparse', 'gpu_perman_xshared_coalescing_mshared_sparse']
+columns: ['gpu_perman_xlocal_sparse' 'gpu_perman_xshared_coalescing_mshared_sparse'
+ 'gpu_perman_xshared_coalescing_sparse' 'gpu_perman_xshared_sparse']
+chosen_order: ['gpu_perman_xlocal', 'gpu_perman_xlocal_sparse', 'gpu_perman_xshared', 'gpu_perman_xshared_sparse', 'gpu_perman_xshared_coalescing', 'gpu_perman_xshared_coalescing_sparse', 'gpu_perman_xshared_coalescing_mshared', 'gpu_perman_xshared_coalescing_mshared_sparse', 'gpu_perman_xshared_coalescing_mshared_skipper']
+returning: ['gpu_perman_xlocal_sparse', 'gpu_perman_xshared_sparse', 'gpu_perman_xshared_coalescing_sparse', 'gpu_perman_xshared_coalescing_mshared_sparse']
+columns: ['gpu_perman_xlocal_sparse' 'gpu_perman_xshared_coalescing_mshared_sparse'
+ 'gpu_perman_xshared_coalescing_sparse' 'gpu_perman_xshared_sparse']
+chosen_order: ['gpu_perman_xlocal', 'gpu_perman_xlocal_sparse', 'gpu_perman_xshared', 'gpu_perman_xshared_sparse', 'gpu_perman_xshared_coalescing', 'gpu_perman_xshared_coalescing_sparse', 'gpu_perman_xshared_coalescing_mshared', 'gpu_perman_xshared_coalescing_mshared_sparse', 'gpu_perman_xshared_coalescing_mshared_skipper']
+returning: ['gpu_perman_xlocal_sparse', 'gpu_perman_xshared_sparse', 'gpu_perman_xshared_coalescing_sparse', 'gpu_perman_xshared_coalescing_mshared_sparse']
+columns: ['gpu_perman_xlocal' 'gpu_perman_xshared' 'gpu_perman_xshared_coalescing'
+ 'gpu_perman_xshared_coalescing_mshared']
+chosen_order: ['gpu_perman_xlocal', 'gpu_perman_xlocal_sparse', 'gpu_perman_xshared', 'gpu_perman_xshared_sparse', 'gpu_perman_xshared_coalescing', 'gpu_perman_xshared_coalescing_sparse', 'gpu_perman_xshared_coalescing_mshared', 'gpu_perman_xshared_coalescing_mshared_sparse', 'gpu_perman_xshared_coalescing_mshared_skipper']
+returning: ['gpu_perman_xlocal', 'gpu_perman_xshared', 'gpu_perman_xshared_coalescing', 'gpu_perman_xshared_coalescing_mshared']
+columns: ['gpu_perman_xlocal' 'gpu_perman_xshared' 'gpu_perman_xshared_coalescing'
+ 'gpu_perman_xshared_coalescing_mshared']
+chosen_order: ['gpu_perman_xlocal', 'gpu_perman_xlocal_sparse', 'gpu_perman_xshared', 'gpu_perman_xshared_sparse', 'gpu_perman_xshared_coalescing', 'gpu_perman_xshared_coalescing_sparse', 'gpu_perman_xshared_coalescing_mshared', 'gpu_perman_xshared_coalescing_mshared_sparse', 'gpu_perman_xshared_coalescing_mshared_skipper']
+returning: ['gpu_perman_xlocal', 'gpu_perman_xshared', 'gpu_perman_xshared_coalescing', 'gpu_perman_xshared_coalescing_mshared']
+columns: ['gpu_perman_xlocal' 'gpu_perman_xshared' 'gpu_perman_xshared_coalescing'
+ 'gpu_perman_xshared_coalescing_mshared']
+chosen_order: ['gpu_perman_xlocal', 'gpu_perman_xlocal_sparse', 'gpu_perman_xshared', 'gpu_perman_xshared_sparse', 'gpu_perman_xshared_coalescing', 'gpu_perman_xshared_coalescing_sparse', 'gpu_perman_xshared_coalescing_mshared', 'gpu_perman_xshared_coalescing_mshared_sparse', 'gpu_perman_xshared_coalescing_mshared_skipper']
+returning: ['gpu_perman_xlocal', 'gpu_perman_xshared', 'gpu_perman_xshared_coalescing', 'gpu_perman_xshared_coalescing_mshared']
+columns: ['gpu_perman_xlocal' 'gpu_perman_xshared' 'gpu_perman_xshared_coalescing'
+ 'gpu_perman_xshared_coalescing_mshared']
+chosen_order: ['gpu_perman_xlocal', 'gpu_perman_xlocal_sparse', 'gpu_perman_xshared', 'gpu_perman_xshared_sparse', 'gpu_perman_xshared_coalescing', 'gpu_perman_xshared_coalescing_sparse', 'gpu_perman_xshared_coalescing_mshared', 'gpu_perman_xshared_coalescing_mshared_sparse', 'gpu_perman_xshared_coalescing_mshared_skipper']
+returning: ['gpu_perman_xlocal', 'gpu_perman_xshared', 'gpu_perman_xshared_coalescing', 'gpu_perman_xshared_coalescing_mshared']
+columns: ['gpu_perman_xlocal' 'gpu_perman_xshared' 'gpu_perman_xshared_coalescing'
+ 'gpu_perman_xshared_coalescing_mshared']
+chosen_order: ['gpu_perman_xlocal', 'gpu_perman_xlocal_sparse', 'gpu_perman_xshared', 'gpu_perman_xshared_sparse', 'gpu_perman_xshared_coalescing', 'gpu_perman_xshared_coalescing_sparse', 'gpu_perman_xshared_coalescing_mshared', 'gpu_perman_xshared_coalescing_mshared_sparse', 'gpu_perman_xshared_coalescing_mshared_skipper']
+returning: ['gpu_perman_xlocal', 'gpu_perman_xshared', 'gpu_perman_xshared_coalescing', 'gpu_perman_xshared_coalescing_mshared']
+columns: ['gpu_perman_xlocal' 'gpu_perman_xshared' 'gpu_perman_xshared_coalescing'
+ 'gpu_perman_xshared_coalescing_mshared']
+chosen_order: ['gpu_perman_xlocal', 'gpu_perman_xlocal_sparse', 'gpu_perman_xshared', 'gpu_perman_xshared_sparse', 'gpu_perman_xshared_coalescing', 'gpu_perman_xshared_coalescing_sparse', 'gpu_perman_xshared_coalescing_mshared', 'gpu_perman_xshared_coalescing_mshared_sparse', 'gpu_perman_xshared_coalescing_mshared_skipper']
+returning: ['gpu_perman_xlocal', 'gpu_perman_xshared', 'gpu_perman_xshared_coalescing', 'gpu_perman_xshared_coalescing_mshared']
+columns: ['approximation_mulltigpucpu_chunks' 'gpu_approximation'
+ 'gpu_approximation_sparse'
+ 'gpu_perman64_rasmussen_multigpucpu_chunks_sparse'
+ 'gpu_perman64_xshared_coalescing_mshared_multigpucpu_chunks'
+ 'gpu_perman64_xshared_mshared_multigpu'
+ 'gpu_perman_approximation_multigpucpu_chunks_sparse' 'gpu_perman_xlocal'
+ 'gpu_perman_xlocal_sparse' 'gpu_perman_xshared'
+ 'gpu_perman_xshared_coalescing' 'gpu_perman_xshared_coalescing_mshared'
+ 'gpu_perman_xshared_coalescing_mshared_sparse'
+ 'gpu_perman_xshared_coalescing_sparse' 'gpu_perman_xshared_sparse'
+ 'gpu_rasmussen' 'gpu_rasmussen_sparse' 'rasmussen_multigpucpu_chunks']
+chosen_order: ['gpu_perman_xlocal', 'gpu_perman_xlocal_sparse', 'gpu_perman_xshared', 'gpu_perman_xshared_sparse', 'gpu_perman_xshared_coalescing', 'gpu_perman_xshared_coalescing_sparse', 'gpu_perman_xshared_coalescing_mshared', 'gpu_perman_xshared_coalescing_mshared_sparse', 'gpu_perman_xshared_coalescing_mshared_skipper']
+returning: ['gpu_perman_xlocal', 'gpu_perman_xlocal_sparse', 'gpu_perman_xshared', 'gpu_perman_xshared_sparse', 'gpu_perman_xshared_coalescing', 'gpu_perman_xshared_coalescing_sparse', 'gpu_perman_xshared_coalescing_mshared', 'gpu_perman_xshared_coalescing_mshared_sparse']
+columns: ['approximation_mulltigpucpu_chunks' 'gpu_approximation'
+ 'gpu_approximation_sparse'
+ 'gpu_perman64_rasmussen_multigpucpu_chunks_sparse'
+ 'gpu_perman64_xshared_coalescing_mshared_multigpucpu_chunks'
+ 'gpu_perman64_xshared_mshared_multigpu'
+ 'gpu_perman_approximation_multigpucpu_chunks_sparse' 'gpu_perman_xlocal'
+ 'gpu_perman_xlocal_sparse' 'gpu_perman_xshared'
+ 'gpu_perman_xshared_coalescing' 'gpu_perman_xshared_coalescing_mshared'
+ 'gpu_perman_xshared_coalescing_mshared_sparse'
+ 'gpu_perman_xshared_coalescing_sparse' 'gpu_perman_xshared_sparse'
+ 'gpu_rasmussen' 'gpu_rasmussen_sparse' 'rasmussen_multigpucpu_chunks']
+chosen_order: ['gpu_perman_xlocal', 'gpu_perman_xlocal_sparse', 'gpu_perman_xshared', 'gpu_perman_xshared_sparse', 'gpu_perman_xshared_coalescing', 'gpu_perman_xshared_coalescing_sparse', 'gpu_perman_xshared_coalescing_mshared', 'gpu_perman_xshared_coalescing_mshared_sparse', 'gpu_perman_xshared_coalescing_mshared_skipper']
+returning: ['gpu_perman_xlocal', 'gpu_perman_xlocal_sparse', 'gpu_perman_xshared', 'gpu_perman_xshared_sparse', 'gpu_perman_xshared_coalescing', 'gpu_perman_xshared_coalescing_sparse', 'gpu_perman_xshared_coalescing_mshared', 'gpu_perman_xshared_coalescing_mshared_sparse']
+columns: ['approximation_mulltigpucpu_chunks' 'gpu_approximation'
+ 'gpu_approximation_sparse'
+ 'gpu_perman64_rasmussen_multigpucpu_chunks_sparse'
+ 'gpu_perman64_xshared_coalescing_mshared_multigpucpu_chunks'
+ 'gpu_perman64_xshared_mshared_multigpu'
+ 'gpu_perman_approximation_multigpucpu_chunks_sparse' 'gpu_perman_xlocal'
+ 'gpu_perman_xlocal_sparse' 'gpu_perman_xshared'
+ 'gpu_perman_xshared_coalescing' 'gpu_perman_xshared_coalescing_mshared'
+ 'gpu_perman_xshared_coalescing_mshared_sparse'
+ 'gpu_perman_xshared_coalescing_sparse' 'gpu_perman_xshared_sparse'
+ 'gpu_rasmussen' 'gpu_rasmussen_sparse' 'rasmussen_multigpucpu_chunks']
+chosen_order: ['gpu_perman_xlocal', 'gpu_perman_xlocal_sparse', 'gpu_perman_xshared', 'gpu_perman_xshared_sparse', 'gpu_perman_xshared_coalescing', 'gpu_perman_xshared_coalescing_sparse', 'gpu_perman_xshared_coalescing_mshared', 'gpu_perman_xshared_coalescing_mshared_sparse', 'gpu_perman_xshared_coalescing_mshared_skipper']
+returning: ['gpu_perman_xlocal', 'gpu_perman_xlocal_sparse', 'gpu_perman_xshared', 'gpu_perman_xshared_sparse', 'gpu_perman_xshared_coalescing', 'gpu_perman_xshared_coalescing_sparse', 'gpu_perman_xshared_coalescing_mshared', 'gpu_perman_xshared_coalescing_mshared_sparse']
+columns: ['approximation_mulltigpucpu_chunks' 'gpu_approximation'
+ 'gpu_approximation_sparse'
+ 'gpu_perman64_rasmussen_multigpucpu_chunks_sparse'
+ 'gpu_perman64_xshared_coalescing_mshared_multigpucpu_chunks'
+ 'gpu_perman64_xshared_mshared_multigpu'
+ 'gpu_perman_approximation_multigpucpu_chunks_sparse' 'gpu_perman_xlocal'
+ 'gpu_perman_xlocal_sparse' 'gpu_perman_xshared'
+ 'gpu_perman_xshared_coalescing' 'gpu_perman_xshared_coalescing_mshared'
+ 'gpu_perman_xshared_coalescing_mshared_sparse'
+ 'gpu_perman_xshared_coalescing_sparse' 'gpu_perman_xshared_sparse'
+ 'gpu_rasmussen' 'gpu_rasmussen_sparse' 'rasmussen_multigpucpu_chunks']
+chosen_order: ['gpu_perman_xlocal', 'gpu_perman_xlocal_sparse', 'gpu_perman_xshared', 'gpu_perman_xshared_sparse', 'gpu_perman_xshared_coalescing', 'gpu_perman_xshared_coalescing_sparse', 'gpu_perman_xshared_coalescing_mshared', 'gpu_perman_xshared_coalescing_mshared_sparse', 'gpu_perman_xshared_coalescing_mshared_skipper']
+returning: ['gpu_perman_xlocal', 'gpu_perman_xlocal_sparse', 'gpu_perman_xshared', 'gpu_perman_xshared_sparse', 'gpu_perman_xshared_coalescing', 'gpu_perman_xshared_coalescing_sparse', 'gpu_perman_xshared_coalescing_mshared', 'gpu_perman_xshared_coalescing_mshared_sparse']
+columns: ['approximation_mulltigpucpu_chunks' 'gpu_approximation'
+ 'gpu_approximation_sparse'
+ 'gpu_perman64_rasmussen_multigpucpu_chunks_sparse'
+ 'gpu_perman64_xshared_coalescing_mshared_multigpucpu_chunks'
+ 'gpu_perman64_xshared_mshared_multigpu'
+ 'gpu_perman_approximation_multigpucpu_chunks_sparse' 'gpu_perman_xlocal'
+ 'gpu_perman_xlocal_sparse' 'gpu_perman_xshared'
+ 'gpu_perman_xshared_coalescing' 'gpu_perman_xshared_coalescing_mshared'
+ 'gpu_perman_xshared_coalescing_mshared_sparse'
+ 'gpu_perman_xshared_coalescing_sparse' 'gpu_perman_xshared_sparse'
+ 'gpu_rasmussen' 'gpu_rasmussen_sparse' 'rasmussen_multigpucpu_chunks']
+chosen_order: ['gpu_perman_xlocal', 'gpu_perman_xlocal_sparse', 'gpu_perman_xshared', 'gpu_perman_xshared_sparse', 'gpu_perman_xshared_coalescing', 'gpu_perman_xshared_coalescing_sparse', 'gpu_perman_xshared_coalescing_mshared', 'gpu_perman_xshared_coalescing_mshared_sparse', 'gpu_perman_xshared_coalescing_mshared_skipper']
+returning: ['gpu_perman_xlocal', 'gpu_perman_xlocal_sparse', 'gpu_perman_xshared', 'gpu_perman_xshared_sparse', 'gpu_perman_xshared_coalescing', 'gpu_perman_xshared_coalescing_sparse', 'gpu_perman_xshared_coalescing_mshared', 'gpu_perman_xshared_coalescing_mshared_sparse']
+columns: ['approximation_mulltigpucpu_chunks' 'gpu_approximation'
+ 'gpu_approximation_sparse'
+ 'gpu_perman64_rasmussen_multigpucpu_chunks_sparse'
+ 'gpu_perman_approximation_multigpucpu_chunks_sparse' 'gpu_perman_xlocal'
+ 'gpu_perman_xlocal_sparse' 'gpu_perman_xshared'
+ 'gpu_perman_xshared_coalescing' 'gpu_perman_xshared_coalescing_mshared'
+ 'gpu_perman_xshared_coalescing_mshared_sparse'
+ 'gpu_perman_xshared_coalescing_sparse' 'gpu_perman_xshared_sparse'
+ 'gpu_rasmussen' 'gpu_rasmussen_sparse' 'rasmussen_multigpucpu_chunks']
+chosen_order: ['gpu_perman_xlocal', 'gpu_perman_xlocal_sparse', 'gpu_perman_xshared', 'gpu_perman_xshared_sparse', 'gpu_perman_xshared_coalescing', 'gpu_perman_xshared_coalescing_sparse', 'gpu_perman_xshared_coalescing_mshared', 'gpu_perman_xshared_coalescing_mshared_sparse', 'gpu_perman_xshared_coalescing_mshared_skipper']
+returning: ['gpu_perman_xlocal', 'gpu_perman_xlocal_sparse', 'gpu_perman_xshared', 'gpu_perman_xshared_sparse', 'gpu_perman_xshared_coalescing', 'gpu_perman_xshared_coalescing_sparse', 'gpu_perman_xshared_coalescing_mshared', 'gpu_perman_xshared_coalescing_mshared_sparse']
+[['#8290BB', '#BC7A8F', '#586BA4', '#A54D69', '#3E5496', '#8E2043', '#324376', '#771434'], ['#8290BB', '#BC7A8F', '#586BA4', '#A54D69', '#3E5496', '#8E2043', '#324376', '#771434'], ['#8290BB', '#BC7A8F', '#586BA4', '#A54D69', '#3E5496', '#8E2043', '#324376', '#771434'], ['#8290BB', '#BC7A8F', '#586BA4', '#A54D69', '#3E5496', '#8E2043', '#324376', '#771434'], ['#8290BB', '#BC7A8F', '#586BA4', '#A54D69', '#3E5496', '#8E2043', '#324376', '#771434'], ['#8290BB', '#BC7A8F', '#586BA4', '#A54D69', '#3E5496', '#8E2043', '#324376', '#771434']]
+['gpu_perman_xlocal', 'gpu_perman_xlocal_sparse', 'gpu_perman_xshared', 'gpu_perman_xshared_sparse', 'gpu_perman_xshared_coalescing', 'gpu_perman_xshared_coalescing_sparse', 'gpu_perman_xshared_coalescing_mshared', 'gpu_perman_xshared_coalescing_mshared_sparse']
+columns: ['gpu_perman_xlocal' 'gpu_perman_xlocal_sparse' 'gpu_perman_xshared'
+ 'gpu_perman_xshared_coalescing' 'gpu_perman_xshared_coalescing_mshared'
+ 'gpu_perman_xshared_coalescing_mshared_sparse'
+ 'gpu_perman_xshared_coalescing_sparse' 'gpu_perman_xshared_sparse']
+chosen_order: ['gpu_perman_xlocal', 'gpu_perman_xlocal_sparse', 'gpu_perman_xshared', 'gpu_perman_xshared_sparse', 'gpu_perman_xshared_coalescing', 'gpu_perman_xshared_coalescing_sparse', 'gpu_perman_xshared_coalescing_mshared', 'gpu_perman_xshared_coalescing_mshared_sparse', 'gpu_perman_xshared_coalescing_mshared_skipper']
+returning: ['gpu_perman_xlocal', 'gpu_perman_xlocal_sparse', 'gpu_perman_xshared', 'gpu_perman_xshared_sparse', 'gpu_perman_xshared_coalescing', 'gpu_perman_xshared_coalescing_sparse', 'gpu_perman_xshared_coalescing_mshared', 'gpu_perman_xshared_coalescing_mshared_sparse']
+columns: ['gpu_perman_xlocal' 'gpu_perman_xlocal_sparse' 'gpu_perman_xshared'
+ 'gpu_perman_xshared_coalescing' 'gpu_perman_xshared_coalescing_mshared'
+ 'gpu_perman_xshared_coalescing_mshared_sparse'
+ 'gpu_perman_xshared_coalescing_sparse' 'gpu_perman_xshared_sparse']
+chosen_order: ['gpu_perman_xlocal', 'gpu_perman_xlocal_sparse', 'gpu_perman_xshared', 'gpu_perman_xshared_sparse', 'gpu_perman_xshared_coalescing', 'gpu_perman_xshared_coalescing_sparse', 'gpu_perman_xshared_coalescing_mshared', 'gpu_perman_xshared_coalescing_mshared_sparse', 'gpu_perman_xshared_coalescing_mshared_skipper']
+returning: ['gpu_perman_xlocal', 'gpu_perman_xlocal_sparse', 'gpu_perman_xshared', 'gpu_perman_xshared_sparse', 'gpu_perman_xshared_coalescing', 'gpu_perman_xshared_coalescing_sparse', 'gpu_perman_xshared_coalescing_mshared', 'gpu_perman_xshared_coalescing_mshared_sparse']
+columns: ['gpu_perman_xlocal' 'gpu_perman_xlocal_sparse' 'gpu_perman_xshared'
+ 'gpu_perman_xshared_coalescing' 'gpu_perman_xshared_coalescing_mshared'
+ 'gpu_perman_xshared_coalescing_mshared_sparse'
+ 'gpu_perman_xshared_coalescing_sparse' 'gpu_perman_xshared_sparse']
+chosen_order: ['gpu_perman_xlocal', 'gpu_perman_xlocal_sparse', 'gpu_perman_xshared', 'gpu_perman_xshared_sparse', 'gpu_perman_xshared_coalescing', 'gpu_perman_xshared_coalescing_sparse', 'gpu_perman_xshared_coalescing_mshared', 'gpu_perman_xshared_coalescing_mshared_sparse', 'gpu_perman_xshared_coalescing_mshared_skipper']
+returning: ['gpu_perman_xlocal', 'gpu_perman_xlocal_sparse', 'gpu_perman_xshared', 'gpu_perman_xshared_sparse', 'gpu_perman_xshared_coalescing', 'gpu_perman_xshared_coalescing_sparse', 'gpu_perman_xshared_coalescing_mshared', 'gpu_perman_xshared_coalescing_mshared_sparse']
+columns: ['gpu_perman_xlocal' 'gpu_perman_xlocal_sparse' 'gpu_perman_xshared'
+ 'gpu_perman_xshared_coalescing' 'gpu_perman_xshared_coalescing_mshared'
+ 'gpu_perman_xshared_coalescing_mshared_sparse'
+ 'gpu_perman_xshared_coalescing_sparse' 'gpu_perman_xshared_sparse']
+chosen_order: ['gpu_perman_xlocal', 'gpu_perman_xlocal_sparse', 'gpu_perman_xshared', 'gpu_perman_xshared_sparse', 'gpu_perman_xshared_coalescing', 'gpu_perman_xshared_coalescing_sparse', 'gpu_perman_xshared_coalescing_mshared', 'gpu_perman_xshared_coalescing_mshared_sparse', 'gpu_perman_xshared_coalescing_mshared_skipper']
+returning: ['gpu_perman_xlocal', 'gpu_perman_xlocal_sparse', 'gpu_perman_xshared', 'gpu_perman_xshared_sparse', 'gpu_perman_xshared_coalescing', 'gpu_perman_xshared_coalescing_sparse', 'gpu_perman_xshared_coalescing_mshared', 'gpu_perman_xshared_coalescing_mshared_sparse']
+columns: ['gpu_perman_xlocal' 'gpu_perman_xlocal_sparse' 'gpu_perman_xshared'
+ 'gpu_perman_xshared_coalescing' 'gpu_perman_xshared_coalescing_mshared'
+ 'gpu_perman_xshared_coalescing_mshared_sparse'
+ 'gpu_perman_xshared_coalescing_sparse' 'gpu_perman_xshared_sparse']
+chosen_order: ['gpu_perman_xlocal', 'gpu_perman_xlocal_sparse', 'gpu_perman_xshared', 'gpu_perman_xshared_sparse', 'gpu_perman_xshared_coalescing', 'gpu_perman_xshared_coalescing_sparse', 'gpu_perman_xshared_coalescing_mshared', 'gpu_perman_xshared_coalescing_mshared_sparse', 'gpu_perman_xshared_coalescing_mshared_skipper']
+returning: ['gpu_perman_xlocal', 'gpu_perman_xlocal_sparse', 'gpu_perman_xshared', 'gpu_perman_xshared_sparse', 'gpu_perman_xshared_coalescing', 'gpu_perman_xshared_coalescing_sparse', 'gpu_perman_xshared_coalescing_mshared', 'gpu_perman_xshared_coalescing_mshared_sparse']
+columns: ['gpu_perman_xlocal' 'gpu_perman_xlocal_sparse' 'gpu_perman_xshared'
+ 'gpu_perman_xshared_coalescing' 'gpu_perman_xshared_coalescing_mshared'
+ 'gpu_perman_xshared_coalescing_mshared_sparse'
+ 'gpu_perman_xshared_coalescing_sparse' 'gpu_perman_xshared_sparse']
+chosen_order: ['gpu_perman_xlocal', 'gpu_perman_xlocal_sparse', 'gpu_perman_xshared', 'gpu_perman_xshared_sparse', 'gpu_perman_xshared_coalescing', 'gpu_perman_xshared_coalescing_sparse', 'gpu_perman_xshared_coalescing_mshared', 'gpu_perman_xshared_coalescing_mshared_sparse', 'gpu_perman_xshared_coalescing_mshared_skipper']
+returning: ['gpu_perman_xlocal', 'gpu_perman_xlocal_sparse', 'gpu_perman_xshared', 'gpu_perman_xshared_sparse', 'gpu_perman_xshared_coalescing', 'gpu_perman_xshared_coalescing_sparse', 'gpu_perman_xshared_coalescing_mshared', 'gpu_perman_xshared_coalescing_mshared_sparse']
+[['#8290BB', '#BC7A8F', '#586BA4', '#A54D69', '#3E5496', '#8E2043', '#324376', '#771434'], ['#8290BB', '#BC7A8F', '#586BA4', '#A54D69', '#3E5496', '#8E2043', '#324376', '#771434'], ['#8290BB', '#BC7A8F', '#586BA4', '#A54D69', '#3E5496', '#8E2043', '#324376', '#771434'], ['#8290BB', '#BC7A8F', '#586BA4', '#A54D69', '#3E5496', '#8E2043', '#324376', '#771434'], ['#8290BB', '#BC7A8F', '#586BA4', '#A54D69', '#3E5496', '#8E2043', '#324376', '#771434'], ['#8290BB', '#BC7A8F', '#586BA4', '#A54D69', '#3E5496', '#8E2043', '#324376', '#771434']]
+['gpu_perman_xlocal', 'gpu_perman_xlocal_sparse', 'gpu_perman_xshared', 'gpu_perman_xshared_sparse', 'gpu_perman_xshared_coalescing', 'gpu_perman_xshared_coalescing_sparse', 'gpu_perman_xshared_coalescing_mshared', 'gpu_perman_xshared_coalescing_mshared_sparse']
+type:  ['int' 'double' 'float']
+patterns:  [0 1]
+realw_name:  [None]
+ordering: [0 1 2]
+
