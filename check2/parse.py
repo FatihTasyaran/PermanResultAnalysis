@@ -60,7 +60,32 @@ paired_algo_colors = {'gpu_perman_xglobal': '#B4BCD6', ##karpfenblau1
                       'gpu_perman_xshared_sparse': '#A54D69',
                       'gpu_perman_xshared_coalescing_sparse': '#8E2043',
                       'gpu_perman_xshared_coalescing_mshared_sparse': '#771434',
-                      'gpu_perman_xshared_coalescing_mshared_skipper': '#EFDC60' #signal2
+                      'gpu_perman_xshared_coalescing_mshared_skipper': '#EFDC60', #signal2
+                      
+                      'gpu_perman_xlocal_sparse SparseOrder': '#BC7A8F', #bordeaux1
+                      'gpu_perman_xshared_sparse SparseOrder': '#A54D69',
+                      'gpu_perman_xshared_coalescing_sparse SparseOrder': '#8E2043',
+                      'gpu_perman_xshared_coalescing_mshared_sparse SparseOrder': '#771434',
+                      'gpu_perman_xshared_coalescing_mshared_skipper SparseOrder': '#EFDC60' #signal2
+}
+
+paired_algo_hatches = {'gpu_perman_xglobal': '', ##karpfenblau1
+                       'gpu_perman_xlocal': '',
+                       'gpu_perman_xshared': '',
+                       'gpu_perman_xshared_coalescing': '',
+                       'gpu_perman_xshared_coalescing_mshared': '',
+                      
+                       'gpu_perman_xlocal_sparse': '', #bordeaux1
+                       'gpu_perman_xshared_sparse': '',
+                       'gpu_perman_xshared_coalescing_sparse': '',
+                       'gpu_perman_xshared_coalescing_mshared_sparse': '',
+                       'gpu_perman_xshared_coalescing_mshared_skipper': '', #signal2
+                       
+                       'gpu_perman_xlocal_sparse SparseOrder': '///', #bordeaux1
+                       'gpu_perman_xshared_sparse SparseOrder': '///',
+                       'gpu_perman_xshared_coalescing_sparse SparseOrder': '///',
+                       'gpu_perman_xshared_coalescing_mshared_sparse SparseOrder': '///',
+                       'gpu_perman_xshared_coalescing_mshared_skipper SparseOrder': '///' #signal2
 }
     
 
@@ -71,10 +96,17 @@ algo_order_sequence = ['gpu_perman_xlocal' ,
                        'gpu_perman_xshared_coalescing',
                        'gpu_perman_xshared_coalescing_mshared',
                        'gpu_perman_xlocal_sparse' ,
+                       'gpu_perman_xlocal_sparse SparseOrder' ,
                        'gpu_perman_xshared_sparse',
+                       'gpu_perman_xshared_sparse SparseOrder',
                        'gpu_perman_xshared_coalescing_sparse',
+                       'gpu_perman_xshared_coalescing_sparse SparseOrder',
                        'gpu_perman_xshared_coalescing_mshared_sparse',
-                       'gpu_perman_xshared_coalescing_mshared_skipper']
+                       'gpu_perman_xshared_coalescing_mshared_sparse SparseOrder',
+                       'gpu_perman_xshared_coalescing_mshared_skipper',
+                       'gpu_perman_xshared_coalescing_mshared_skipper SkipOrder']
+
+
 
 algo_order_pair = ['gpu_perman_xlocal' ,
                    'gpu_perman_xlocal_sparse' ,
@@ -111,6 +143,16 @@ def color_order(columns):
         
 
     return colors
+
+def hatch_order(columns):
+
+    hatches = []
+
+    for item in columns:
+        hatches.append(paired_algo_hatches[item])
+
+
+    return hatches
 
 
 def get_files():
@@ -582,7 +624,115 @@ def general_graph(df, x, y, bars, multidimname, multidimval, bool_include, slice
     #fig.suptitle(title + ' +: ' + include_str + ' -:' + exclude_str)
     fig.suptitle(title)
     fig.text(0.01, 0.5, 'Time', ha='center', va='center', rotation='vertical')
-    fig.legend(lines, labels, loc='lower center', ncol = 3)
+    fig.legend(lines, labels, loc='lower center', ncol = 2)
+
+
+#Indeed
+def ugly_bool(num):
+
+    yes = [4,5,6,7,12,13,14,15,20,21,22,23]
+    no = [0,1,2,3,8,9,10,11,16,17,18,19]
+
+    if num in yes:
+        return True
+    elif num in no:
+        return False
+    else:
+        print('num:', num)
+        exit(1)
+        
+    
+
+
+def sparse_order_exclusive(df, x, y, bars, multidimname, multidimval, bool_include, slice_include, exclude, title):
+    ##x -> size
+    ##y -> time (accuracy ?)
+    ##multidim -> density
+
+    df, include_str, exclude_str = prepare_dataset(df, bool_include, slice_include, exclude)
+    
+    df_list = []
+    for val in multidimval:
+        df_list.append(df.loc[df[multidimname] == val])
+                
+
+    pivots = []
+    for df in df_list:
+        pivots.append(df.pivot_table(index=[x], columns=bars, values=y))
+
+
+    color_list = []
+    hatch_list = []
+    for i in range(len(pivots)):
+        pivots[i] = pivots[i].reindex(columns = column_order(pivots[i].columns.values, algo_order_sequence))
+        print('pivots', i, 'columns')
+        color_list.append(color_order(pivots[i].columns.values)) ##Sends an array, asks for an array
+        hatch_list.append(hatch_order(pivots[i].columns.values)) ##Sends an array, asks for an array
+
+
+    print('HATCH LIST:', hatch_list)
+        
+    nrow = int(len(multidimval) / 2)
+    ncol = 2
+    fig, axes = plt.subplots(nrow, ncol, sharex=True, sharey=False)
+
+    for r in range(nrow):
+        for c in range(ncol):
+            columns_and_colors = zip(pivots[r*ncol+c].columns.values, color_list[r*ncol+c])
+            columns_and_hatches = zip(pivots[r*ncol+c].columns.values, hatch_list[r*ncol+c])
+            pivots[r*ncol+c].plot.bar(ax=axes[r,c], edgecolor='black', width=0.9,
+                                      color=[cc[1] for cc in columns_and_colors],
+                                      legend=False)
+            axes[r,c].set_title('Density: ' + multidimval[r*ncol+c])
+            ax = axes[r,c]
+            #for container in ax.containers:
+                #ax.bar_label(container)
+            #plt.show()
+
+
+
+    for r in range(nrow):
+        for c in range(ncol):
+            bars = axes[r,c].patches
+            for i in range(len(bars)):
+                if(ugly_bool(i)):
+                    bars[i].set_hatch('///')
+
+    lines = []
+    labels = []
+
+    Line, Label = axes[0,0].get_legend_handles_labels()
+    lines.extend(Line)
+    labels.extend(Label)
+
+    print('lines:', lines)
+    print('labels:', labels)
+    labels = ['gpu_perman_xshared_sparse',
+              'gpu_perman_xshared_coalescing_sparse',
+              'gpu_perman_xshared_coalescing_mshared_sparse',
+              'gpu_perman_xshared_sparse SparseOrder',
+              'gpu_perman_xshared_coalescing_sparse SparseOrder',
+              'gpu_perman_xshared_coalescing_mshared_sparse SparseOrder']
+
+    one = lines[1]
+    two = lines[2]
+    three = lines[3]
+    four = lines[4]
+
+    lines[3] = one
+    lines[1] = two
+    lines[2] = four
+    lines[4] = three
+    
+    #lines[1] = lines[2]
+    #lines[5] = lines[1]
+    #exit(1)
+
+    fig.subplots_adjust(left=0.067, bottom=0.134, right=0.987, top=0.917, wspace=0.127, hspace=0.2)
+    #fig.suptitle(title + ' +: ' + include_str + ' -:' + exclude_str)
+    fig.suptitle(title)
+    fig.text(0.01, 0.5, 'Time', ha='center', va='center', rotation='vertical')
+    fig.legend(lines, labels, loc='lower center', ncol = 2)
 
     
 
@@ -725,7 +875,7 @@ if __name__ == "__main__":
                 dense_include, slice_include_smallest, exclude, 'Single GPU - Dense - Smaller')
     
     general_graph(df, 'synth_size', 'time', 'algo_name', 'synth_density', densities,
-                dense_include, slice_include_smaller, exclude, 'Single GPU - Dense - Smaller')
+                dense_include, slice_include_smaller, exclude, 'Single GPU - Dense - Medium')
 
     general_graph(df, 'synth_size', 'time', 'algo_name', 'synth_density', densities,
                 dense_include, slice_include_bigger, exclude, 'Single GPU - Dense - Bigger')
@@ -734,6 +884,9 @@ if __name__ == "__main__":
 
     sparse_include = [['decomposition', 0], ['ordering', 0], ['sparse', 1]]
     sparse_include2 = [['decomposition', 0], ['ordering', 1], ['sparse', 1]]
+
+    ##sparse order exclusive
+    sparse_include3 = [['decomposition', 0], ['sparse', 1]]
 
     general_graph(df, 'synth_size', 'time', 'algo_name', 'synth_density', densities,
     sparse_include, slice_include_smaller, exclude, 'Single GPU - Sparse - Smaller')
@@ -756,8 +909,27 @@ if __name__ == "__main__":
     general_graph(df, 'synth_size', 'time', 'algo_name', 'synth_density', densities,
     all_include, slice_include_bigger, exclude, 'Single GPU - Sparse vs Dense - Bigger')
 
+
+
+    ####sparse order exclusive
+
+    
+    sparse_df = prepare_dataset(df, sparse_include, slice_include_smaller, exclude)[0]
+    sparse_ordering_df = prepare_dataset(df, sparse_include2, slice_include_smaller, exclude)[0]
+
+    print(sparse_ordering_df.head(20))
+    
+    sparse_ordering_df['algo_name'] = sparse_ordering_df['algo_name'] + ' SparseOrder'
+    exclusive_df = pd.concat([sparse_df, sparse_ordering_df])
+
+    sparse_order_exclusive(exclusive_df, 'synth_size', 'time', 'algo_name', 'synth_density', densities,
+    sparse_include3, slice_include_smaller, exclude, 'Single GPU - Sparse - Smaller - vs Ordering')
+
+
+    ##ALWAYS AT THE END
     general_graph(df, 'synth_size', 'time', 'algo_name', 'synth_density', densities,
     all_include, slice_include_bigger, exclude, 'THIS IS EMPTY')
+    ##ALWAYS AT THE END
     
     plt.tight_layout()
     plt.show()
@@ -781,6 +953,6 @@ if __name__ == "__main__":
     #df = df.loc[(df['ordering'] == 2)]
     #print(df.head())
     
-
-
+    
+    
     

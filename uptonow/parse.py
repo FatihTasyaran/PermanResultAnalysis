@@ -486,7 +486,7 @@ def one_chart(df, include, exclude):
     fig.subplots_adjust(left=0.067, bottom=0.134, right=0.987, top=0.917, wspace=0.127, hspace=0.2)
     fig.suptitle('Single GPU - Sparse vs Dense' + ' +: ' + include_str + ' -: ' + exclude_str)
     fig.text(0.01, 0.5, 'Time', ha='center', va='center', rotation='vertical')
-    fig.legend(lines, labels, loc='lower center', ncol = 5)
+    fig.legend(lines, labels, loc='lower center', ncol = 4)
         
     #####SPARSE#####
 
